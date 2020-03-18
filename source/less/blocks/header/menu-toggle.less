@@ -1,0 +1,66 @@
+.menu-toggle {
+  position: relative;
+
+  width: @m56px;
+  height: @m45px;
+  padding: 0;
+
+  color: transparent;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: @m5px;
+
+  font-size: 0;
+  color: transparent;
+  background: #000000;
+
+  cursor: pointer;
+  transition: 0.1s 0.1s;
+  border-radius: 3px;
+}
+
+.menu-toggle.active span {
+  background-color: transparent;
+}
+
+.menu-toggle::before,
+.menu-toggle::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: @m5px;
+
+  background-color: #000000;
+  border-radius: 3px;
+  transition: 0.3s 0.3s, transform 0.3s;
+}
+
+.menu-toggle::before {
+  top: @m6px;
+}
+
+.menu-toggle::after {
+  top: @m40px;
+}
+
+.active.menu-toggle::before {
+  transform: rotate3d(0, 0, 1, -45deg);
+  transition: 0.3s, transform 0.3s 0.3s;
+  top: @m20px;
+}
+
+.active.menu-toggle::after {
+  transform: rotate3d(0, 0, 1, 45deg);
+  transition: 0.3s, transform 0.3s 0.3s;
+  top: @m20px;
+}

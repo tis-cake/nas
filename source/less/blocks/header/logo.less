@@ -1,0 +1,79 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  font-family: @gotham;
+  text-decoration: none;
+
+  color: @light-black;
+}
+
+.logo__text {
+  position: relative;
+  padding-left: @d55px;
+
+  font-size: @d24px;
+  font-weight: 300;
+
+  &--strong {
+    font-weight: 700;
+    color: #2f2f2f;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -@d10px;
+    left:  -@d6px;
+
+    max-width: 50px;
+    max-height: 50px;
+    width: @d50px;
+    height: @d50px;
+
+    background-image: url("../img/svg/logo-nd-green.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.footer__logo {
+  .logo__text::before {
+    background-image: url("../img/svg/logo-nd-white.svg");
+  }
+}
+
+
+@media (max-width: @mobile-width) {
+
+  .logo__text {
+    width: @m110px;
+    padding-left: @m84px;
+
+    font-size: @m33px;
+    letter-spacing: 0.17px;
+
+    &::before {
+      top: -@m17px;
+      left: -@m24px;
+      max-width: none;
+      max-height: none;
+      width: @m110px;
+      height: @m110px;
+    }
+  }
+}
+
+@media  (min-width: @max-desktop-width) {
+
+  .logo__text {
+    padding-left: 55px;
+    font-size: 24px;
+
+    &::before {
+      top: -10px;
+      left: -6px;
+    }
+  }
+}

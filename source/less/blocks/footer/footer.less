@@ -1,0 +1,143 @@
+.footer {
+  padding-top: @d145px;
+
+  font-family: @gotham;
+  background-color: #2f2f2f;
+}
+
+.footer * {
+  color: #fff;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: @d144px;
+}
+
+.footer__list {
+  font-size: @d19px;
+  line-height: @d37px;
+  letter-spacing: 0.1px;
+}
+
+.footer__mobile-wrapper {
+  display: none;
+}
+
+.footer__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__number-link {
+  margin-bottom: @d10px;
+
+  font-size: @d27px;
+  font-weight: 700;
+}
+
+.footer__text {
+  font-size: @d19px;
+  line-height: @d24px;
+}
+
+@media (max-width: @mobile-width) {
+  .footer {
+    padding-top: @m171px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding-bottom: @m197px;
+  }
+
+  .footer__logo {
+    .logo__text {
+      width: auto;
+      padding-left: @m96px;
+      &::before {
+        top: -@m39px;
+        left: -@m18px;
+      }
+    }
+  }
+
+  .footer__column-desktop {
+    display: none;
+  }
+
+  .footer__mobile-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__list {
+    margin-bottom: @m61px;
+
+    font-size: @m30px;
+    line-height: normal;
+    letter-spacing: 0.15px;
+  }
+
+  .footer__list--left {
+    width: @m300px;
+  }
+
+  .footer__list--right {
+    padding-top: @m6px;
+    text-align: right;
+  }
+
+  .footer__item {
+    margin-bottom: @m52px;
+  }
+
+  .footer__phone {
+    align-items: stretch;
+    margin-bottom: @m97px;
+  }
+
+  .footer__number-link {
+    margin-bottom: @m13px;
+
+    font-size: @m35px;
+    letter-spacing: 0.35px;
+  }
+
+  .footer__text {
+    font-size: @m27px;
+    line-height: normal;
+    letter-spacing: 0.35px;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+
+  .footer {
+    padding-top: 145px;
+  }
+
+  .footer__wrapper {
+    padding-bottom: 144px;
+  }
+
+  .footer__list {
+    font-size: 19px;
+    line-height: 37px;
+  }
+
+  .footer__number-link {
+    margin-bottom: 10px;
+    font-size: 27px;
+  }
+
+  .footer__text {
+    font-size: 19px;
+    line-height: 24px;
+  }
+}

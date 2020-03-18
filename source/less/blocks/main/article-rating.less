@@ -1,0 +1,106 @@
+.article-rating {
+  display: flex;
+  margin-bottom: @d67px;
+}
+
+.article-rating__title {
+  margin-top: @d3px;
+  // margin-right: @d20px;
+
+  font-size: @d19px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+
+.article-rating__area {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  // width: @d165px;
+}
+
+.article-rating__area:not(:checked) > input {
+  display: none;
+}
+
+.article-rating__area:not(:checked) > label {
+  position: relative;
+  cursor: pointer;
+
+  width: @d25px;
+  height: @d25px;
+  padding: 0;
+}
+.article-rating__area:not(:checked) > label::before {
+  content: '';
+  position: absolute;
+
+  width: @d25px;
+  height: @d25px;
+
+  background-image: url("../img/svg/star-stroke-black.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-rating__area > input:checked ~ label::before,
+.article-rating__area:not(:checked) > label:hover,
+.article-rating__area:not(:checked) > label:hover ~ label {
+  background-image: url("../img/svg/star-fill-gold.svg");
+}
+
+@media (max-width: @mobile-width) {
+  .article-rating {
+    flex-wrap: wrap;
+    margin-bottom: @m120px;
+  }
+
+  .article-rating__title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: @m30px;
+
+    font-size: @m33px;
+  }
+
+  .article-rating__area {
+    // width: @m415px;
+  }
+
+  .article-rating__area:not(:checked) > label {
+    width: @m60px;
+    height: @m60px;
+    padding: 0;
+  }
+  .article-rating__area:not(:checked) > label::before {
+    width: @m60px;
+    height: @m60px;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .article-rating {
+    margin-bottom: 67px;
+  }
+
+  .article-rating__title {
+    margin-top: 3px;
+    // margin-right: 20px;
+    font-size: 19px;
+  }
+
+  .article-rating__area {
+    // width: 165px;
+  }
+
+  .article-rating__area:not(:checked) > label {
+    width: 25px;
+    height: 25px;
+  }
+  .article-rating__area:not(:checked) > label::before {
+    width: 25px;
+    height: 25px;
+  }
+}

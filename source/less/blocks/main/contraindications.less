@@ -1,0 +1,69 @@
+.contraindications {
+  margin-bottom: @d202px;
+}
+
+.contraindications__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contraindications__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: @d280px;
+  height: @d103px;
+  margin-bottom: @d31px;
+
+  color: #2f2f2f;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+  border-radius: 19px;
+  background-color: #ffffff;
+}
+
+.contraindications__text {
+  width: @d165px;
+  font-size: @d18px;
+  text-align: center;
+}
+
+@media  (max-width: @mobile-width) {
+  .contraindications {
+    margin-bottom: @m193px;
+  }
+
+  .contraindications__item {
+    width: @m321px;
+    height: @m147px;
+    margin-bottom: @m33px;
+  }
+
+  .contraindications__text {
+    width: @m255px;
+    font-size: @m27px;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .contraindications {
+    margin-bottom: 202px;
+  }
+
+  .contraindications__list {
+    // height: 237px;
+  }
+
+  .contraindications__item {
+    width: 280px;
+    height: 103px;
+    margin-bottom: 31px;
+  }
+
+  .contraindications__text {
+    width: 165px;
+    font-size: 18px;
+  }
+}

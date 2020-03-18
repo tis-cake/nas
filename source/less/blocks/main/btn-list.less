@@ -1,0 +1,108 @@
+.btn-list__list-toggle {
+  display: none;
+}
+
+ @media (max-width: @mobile-width) {
+  .btn-list__list-toggle {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    width: @m679px;
+    height: @m90px;
+    padding-left: @m109px;
+
+    font-size: @m30px;
+    text-transform: none;
+    box-shadow: 0 0 @m55px 5px rgba(5, 9, 48, 0.04);
+    border-radius: 45px;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: @m42px;
+
+      width: @m30px;
+      height: @m5px;
+      background-color:#fff;
+
+      transition-duration: 1s;
+      transition-property: transform;
+
+      border-radius: 20px;
+    }
+
+    &::before {
+      right: @m51px;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      right: @m70px;
+      transform: rotate(45deg);
+    }
+  }
+
+  .active.btn-list__list-toggle {
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      // transform: rotateX(210deg);
+      transform: rotate(-45deg);
+    }
+  }
+
+  .btn-list__close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: @m35px;
+
+    width: @m38px;
+    height: @m26px;
+  }
+
+  .btn-list__close-btn span {
+    height: @m3px;
+    background: #fff;
+    transition: 0.1s 0.1s;
+    border-radius: 3px;
+  }
+
+  .active.btn-list__close-btn span {
+    background-color: transparent;
+  }
+
+  .btn-list__close-btn::before,
+  .btn-list__close-btn::after {
+    height: @m3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: 0.3s 0.3s, transform 0.3s;
+  }
+
+  .btn-list__close-btn::before {
+    top: 0;
+  }
+
+  .btn-list__close-btn::after {
+    top: @m22px;
+  }
+
+  .active.btn-list__close-btn::before {
+    transform: rotate3d(0, 0, 1, -45deg);
+    transition: 0.3s, transform 0.3s 0.3s;
+    top: @m10px;
+  }
+
+  .active.btn-list__close-btn::after {
+    transform: rotate3d(0, 0, 1, 45deg);
+    transition: 0.3s, transform 0.3s 0.3s;
+    top: @m10px;
+  }
+}

@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  // font-family: @circe;
+  // font-weight: @font-weight;
+  // background-color: #fcfcfd;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  // color: #747474;
+}
+
+a {
+  text-decoration: none;
+  // color: #2f2f2f;
+}
+
+ul {
+  .reset-list();
+}
+
+h1,
+h2,
+h3 {
+  // color: #2f2f2f;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  .mp-reset(0,0);
+}
+
+button,
+input {
+  // font-family: @circe;
+}
+
+.noscroll {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+.overlay {
+  display: none;
+
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 1;
+  visibility: visible;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,.5);
+
+  &.active {
+    display: block;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// .container {
+//   max-width: 1625px;
+//   width: 84.6%;
+//   .margin-inline(@a);
+// }
+
+// .container-out-right {
+//   width: 92.187vw; // 1770px 
+//   margin-left: @a;
+// }
+
+// .double-main-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .double-column-wrapper {
+//   width: 62vw; // 1190 px
+//   padding-top: @d20px;
+// }
+
+// .double-aside-wrapper {
+//   width: @d382px;
+//   padding-top: @d20px;
+// }
+
+.hidden-mobile-block {
+  display: none;
+}
+
+// .warning__input:-moz-submit-invalid,
+.warning__input:-moz-ui-invalid,
+.phone-mask:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+@media (max-width: @mobile-width) {
+  // .container,
+  // .container-out-right {
+  //   width: auto;
+  //   .padding-inline(@m35px);
+  // }
+  // .double-column-wrapper {
+  //   width: @m678px;
+  // }
+  // .double-aside-wrapper {
+  //   display: none;
+  // }
+  // .hidden-desktop-block {
+  //   display: none;
+  // }
+  // .hidden-mobile-block {
+  //   display: block;
+  // }
+}
+
+@media (min-width: @max-desktop-width) {
+  
+  // .container-out-right {
+  //   width: 1770px;
+  //   margin-right: @a;
+  //   transform: translateX(75px);
+  // }
+  // .double-column-wrapper {
+  //   width: 1190px;
+  //   padding-top: 20px;
+  // }
+  // .double-aside-wrapper {
+  //   width: 382px;
+  //   padding-top: 20px;
+  // }
+}

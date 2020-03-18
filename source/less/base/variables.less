@@ -1,0 +1,47 @@
+@circe: 'Circe', 'Arial', sans-serif;
+@gotham: 'GothamPro', 'Arial', sans-serif;
+
+@mobile-width: 755px;
+@desktop-width: 1690px;
+@max-desktop-width: 1921px;
+
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+@a: auto;
+
+@solid: 1px solid red;
+
+.o {
+  outline: 1px solid red;
+}
+
+.o(@color) {
+  outline: 1px solid @color;
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.margin-block(@value) {
+  margin-top: @value;
+  margin-bottom: @value;
+}
+
+.margin-inline(@value) {
+  margin-left: @value;
+  margin-right: @value;
+}
+
+.padding-block(@value) {
+  padding-top: @value;
+  padding-bottom: @value;
+}
+
+.padding-inline(@value) {
+  padding-left: @value;
+  padding-right: @value;
+}

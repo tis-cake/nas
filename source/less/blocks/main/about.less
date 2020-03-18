@@ -1,0 +1,403 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: @d231px;
+}
+
+.about__column-left {
+  padding-top: @d40px;
+}
+
+.about__features {
+  margin-top: @d110px;
+  margin-bottom: @d10px;
+}
+
+.about__img-wrapper {
+  position: relative;
+
+  max-width: 611px;
+  max-height: 800px;
+  width: @d611px;
+  height: @d800px;
+
+  margin-right: @d30px;
+
+  &::after {
+    z-index: 1;
+    content:'';
+    position: absolute;
+    bottom: -@d29px;
+    right: -@d29px;
+
+    width: 76.4%;
+    height: 73.7%;
+
+    border-bottom: @d30px solid #1bbd59;
+    border-right: @d30px solid #1bbd59;
+    border-radius: 2px;
+  }
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  box-shadow: 0 0 69px 12px rgba(17, 30, 66, 0.1);
+  border-radius: 2px;
+}
+
+.about--bottom {
+  flex-direction: row-reverse;
+  margin-bottom: @d190px;
+  .about__img-wrapper {
+    margin-right: 0;
+    margin-left: @d20px;
+
+    &::after {
+      bottom: -@d20px;
+      left: -@d18px;
+      right: auto;
+      width: 28.7%;
+      height: 57.2%;
+      border-bottom: @d20px solid #1bbd59;
+      border-left: @d20px solid #1bbd59;
+      border-right: none;
+    }
+  }
+  .about__column-left {
+    padding-top: @d98px;
+    padding-right: @d21px;
+  }
+  .intro--about {
+    max-width: 816px;
+    width: @d816px;
+  }
+  .intro__description {
+    margin-bottom: @d26px;
+  }
+}
+
+.about--detox,
+.about--family,
+.about--contacts {
+  flex-direction: column;
+  margin-bottom: @d87px;
+  // width: @a;
+  h2 {
+    margin-bottom: @d48px;
+
+    font-size: @d45px;
+    font-weight: 700;
+    letter-spacing: 0.23px;
+
+    color: #2f2f2f;
+  }
+  h3 {
+    margin-bottom: @d14px;
+    font-size: @d27px;
+    line-height: @d29px;
+    letter-spacing: 0.14px;
+  }
+  p {
+    margin-bottom: @d25px;
+    font-size: @d18px;
+    font-weight: 400;
+    line-height: @d24px;
+    letter-spacing: 0.1px;
+
+    color: #747474;
+  }
+}
+
+.about--family {
+  // width: 76.56vw; // 1470px
+  margin-bottom: @d140px;
+  p {
+    margin-bottom: @d50px;
+    line-height: @d29px;
+  }
+}
+
+.about--doctor {
+  padding-top: @d89px;
+  margin-bottom: @d135px;
+  .about__img-wrapper {
+    width: @d616px;
+    height: @d672px;
+    &::after {
+      width: 44.7%;
+      height: 63.7%;
+    }
+  }
+}
+
+.about--page,
+.about--clinic-page {
+  margin-bottom: @d217px;
+  .about__column-left {
+    margin-top: @d54px;
+  }
+  .intro__description {
+    max-width: none;
+    width: @d910px;
+    margin-bottom: @d34px;
+  }
+  .about__img-wrapper {
+    .mn;
+    width: @d487px;
+    height: @d650px;
+    &::after {
+      width: 67%;
+      height: 82.4%;
+    }
+  }
+}
+
+@media  (max-width: @mobile-width) {
+  .about {
+    flex-direction: column;
+    margin-bottom: @m206px;
+  }
+
+  .about__column-left {
+    margin-bottom: @m16px;
+    padding-top: 0;
+  }
+
+  .about__features {
+    margin-top: @m91px;
+  }
+
+  .about__img-wrapper {
+    max-width: none;
+    max-height: none;
+    width: @m654px;
+    height: 114.66vw; //860
+    margin-right: @m26px;
+
+    &::after {
+      bottom: -@m26px;
+      right: -@m26px;
+      border-bottom: @m27px solid #1bbd59;
+      border-right: @m27px solid #1bbd59;
+    }
+  }
+
+  .about--bottom {
+    flex-direction: column-reverse;
+    margin-bottom: @m127px;
+    .about__column-left {
+      margin-bottom: 0;
+    }
+    .about__img-wrapper {
+      width: @m585px;
+      height: 104vw; //780
+      margin-left: @m51px;
+      margin-bottom: @m84px;
+
+      &::after {
+        bottom: -@m19px;
+        left: -@m19px;
+        border-bottom: @m20px solid #1bbd59;
+        border-left: @m20px solid #1bbd59;
+      }
+    }
+    .intro--about {
+      max-width: none;
+      width: @m665px;
+    }
+    .intro__title {
+      margin-bottom: @m33px;
+    }
+    .intro__description {
+      line-height: @m42px;
+      margin-bottom: @m42px;
+    }
+  }
+
+  .about--detox,
+  .about--family,
+  .about--contacts {
+    margin-bottom: @m155px;
+    h2 {
+      margin-bottom: @m47px;
+      font-size: @m45px;
+    }
+    h3 {
+      margin-bottom: @m14px;
+      font-size: @m33px;
+      line-height: @m29px;
+      letter-spacing: 0.17px;
+    }
+    p {
+      margin-bottom: @m39px;
+      font-size: @m30px;
+      line-height: @m39px;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .about--family {
+    width: @a;
+  }
+
+  .about--doctor {
+    padding-top: @m98px;
+    margin-bottom: @m275px;
+    .about__img-wrapper {
+      width: @a;
+      height: @m745px;
+      padding-top: @m87px;
+      &::after {
+        width: 44.7%;
+        height: 57.4%;
+      }
+    }
+  }
+
+  .about--page,
+  .about--clinic-page {
+    margin-bottom: @m193px;
+    .about__column-left {
+      margin-top: 0;
+    }
+    .intro--about-page {
+      margin-bottom: @m90px;
+    }
+
+    .intro__title {
+      margin-bottom: @m40px;
+    }
+    .intro__description {
+      max-width: none;
+      width: @a;
+      margin-bottom: @m40px;
+    }
+    .about__img-wrapper {
+      width: @m500px;
+      height: @m650px;
+      .margin-inline(@a);
+      &::after {
+        width: 67%;
+        height: 82.4%;
+      }
+    }
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .about {
+    margin-bottom: 231px;
+  }
+
+  .about__column-left {
+    padding-top: 40px;
+  }
+
+  .about__features {
+    margin-top: 110px;
+    margin-bottom: 10px;
+  }
+
+  .about__img-wrapper {
+    margin-right: 30px;
+
+    &::after {
+      bottom: -29px;
+      right: -29px;
+      border-bottom: 30px solid #1bbd59;
+      border-right: 30px solid #1bbd59;
+    }
+  }
+
+  .about--detox,
+  .about--family,
+  .about--contacts {
+    margin-bottom: 87px;
+    // width: @a;
+    h2 {
+      margin-bottom: 48px;
+      font-size: 45px;
+    }
+    h3 {
+      margin-bottom: 14px;
+      font-size: 27px;
+      line-height: 29px;
+    }
+    p {
+      margin-bottom: 25px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .about--family {
+    // width: 1470px;
+    margin-bottom: 140px;
+    p {
+      margin-bottom: 50px;
+      line-height: 29px;
+    }
+  }
+
+  .about--bottom {
+    margin-bottom: 190px;
+
+    .about__img-wrapper {
+      margin-right: 0px;
+      margin-left: 20px;
+
+      &::after {
+        bottom: -20px;
+        left: -18px;
+
+        border-bottom: 20px solid #1bbd59;
+        border-left: 20px solid #1bbd59;
+      }
+    }
+    .about__column-left {
+      padding-top: 98px;
+      padding-right: 21px;
+    }
+    .intro__description {
+      margin-bottom: 26px;
+    }
+  }
+
+  .about--detox {
+    margin-bottom: 87px;
+  }
+
+  .about--doctor {
+    padding-top: 89px;
+    margin-bottom: 135px;
+    .about__img-wrapper {
+      width: 616px;
+      height: 672px;
+    }
+  }
+
+  .about--page,
+  .about--clinic-page {
+    margin-bottom: 217px;
+    .about__column-left {
+      margin-top: 54px;
+    }
+    .intro__description {
+      max-width: none;
+      width: 910px;
+      margin-bottom: 34px;
+    }
+    .about__img-wrapper {
+      .mn;
+      width: 487px;
+      height: 650px;
+      &::after {
+        width: 67%;
+        height: 82.4%;
+      }
+    }
+  }
+}

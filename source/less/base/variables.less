@@ -20,12 +20,6 @@
   outline: 1px solid @color;
 }
 
-.reset-list() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .margin-block(@value) {
   margin-top: @value;
   margin-bottom: @value;
@@ -44,4 +38,15 @@
 .padding-inline(@value) {
   padding-left: @value;
   padding-right: @value;
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mp-reset(@margin; @padding) {
+  margin: @margin;
+  padding: @padding;
 }

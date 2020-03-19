@@ -12,6 +12,7 @@ const uglify = require('gulp-uglify');
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const svgstore = require('gulp-svgstore');
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -66,6 +67,15 @@ gulp.task("server", function () {
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/js/**/*.js", gulp.series("js"));
   gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task('svgsprite', function() {
+  return gulp.src('source/img/svg/icon-*.svg')
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('source/img'));
 });
 
 // gulp.task("refresh", function reload(done) {

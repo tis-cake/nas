@@ -4,16 +4,13 @@ body {
 
   font-family: @circe;
   font-weight: 400;
+  font-size: 16px;
   background-color: #E5E5E5;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-p {
-  // color: #747474;
 }
 
 a {
@@ -40,9 +37,22 @@ p {
   color: #000;
 }
 
+input,
+button {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 button,
-input {
+input,
+textarea {
   font-family: @circe;
+}
+
+.grid {
+  display: grid;
 }
 
 .noscroll {
@@ -92,8 +102,9 @@ input[type="radio"].visually-hidden {
 .container {
   // max-width: 1625px;
   // width: 84.6%;
-  width: 1400px;
+  max-width: 1400px;
   .margin-inline(@a);
+  .padding-inline(20px);
 }
 
 // .container-out-right {

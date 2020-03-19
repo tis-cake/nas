@@ -14,21 +14,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-<!--   <svg display="none" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="icon-search" viewBox="0 0 19 19">
-    <path d="M18.3691 17.2967L13.9457 12.8732C15.0256 11.5559 15.6713 9.8748 15.6713 8.03789C15.6713 3.82598 12.2535 0.408203 8.0416 0.408203C3.82598 0.408203 0.408203 3.82598 0.408203 8.0416C0.408203 12.2572 3.82598 15.675 8.0416 15.675C9.8748 15.675 11.5596 15.0293 12.877 13.9494L17.2967 18.3691C17.5936 18.666 18.0723 18.666 18.3691 18.3691C18.666 18.0723 18.666 17.5936 18.3691 17.2967ZM1.92227 8.0416C1.92227 4.66465 4.66094 1.92598 8.03789 1.92598C11.4148 1.92598 14.1535 4.66465 14.1535 8.0416C14.1535 11.4186 11.4148 14.1572 8.03789 14.1572C4.66094 14.1572 1.92227 11.4186 1.92227 8.0416Z" fill="black"/>
-  </symbol>
-
-  <symbol id="icon-youtube" viewBox="0 0 512 512">
-    <g>
-      <path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"/>
-      <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"/>
-    </g>
-  </symbol>
-
-</svg> -->
-
   <header class="header">
     <div class="header__block-top">
       <div class="header__content-wrap container">
@@ -96,7 +81,7 @@
     </div>
     <div class="header__block-bottom">
       <nav class="header__nav nav container">
-        <ul class="nav__list">
+        <ul class="nav__list-link">
           <li class="nav__item">
             <a class="nav__link" href="about.html">О нас</a>
           </li>
@@ -116,9 +101,27 @@
             <a class="nav__link" href="contacts.html">Конакты</a>
           </li>
         </ul>
+        <form class="nav__form-lang" action=".php" method="post">
+          <select class="nav__select-lang" name="SELECT-LANG">
+            <option value="LANG-RUSSIAN" selected>RU</option>
+            <option value="LANG-ENGLISH">EN</option>
+            <option value="LANG-FRENCH">FR</option>
+            <option value="LANG-CHINESE">ZH</option>
+          </select>
+        </form>
       </nav>
     </div>
   </header>
+
+  <main class="main">
+    <section class="main-swiper">
+      
+    </section>    
+  </main>
+
+  <footer>
+    
+  </footer>
 
 
 <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

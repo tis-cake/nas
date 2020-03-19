@@ -1,7 +1,12 @@
 .nav {
+  display: flex;
+  justify-content: space-between;
+
+  color: #fff;
+  font-size: 18px;
 }
 
-.nav__list {
+.nav__list-link {
   display: flex;
   flex-wrap: wrap;
   max-width: 1175px;
@@ -9,18 +14,52 @@
 
 .nav__item {
   margin-right: 39px;
-
-  font-size: 18px;
-  color: #fff;
-
   &:last-child {
     margin-right: 0;
   }
 }
 
 .nav__link {
-  display: block;
   .padding-block(14px, 12px);
+  color: #fff;
+}
+
+.nav__form-lang {
+  display: flex;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 18px;
+    right: 4px;
+
+    border: 7px solid #ffffff;
+    border-top-color: #ffffff;
+    border-bottom-width: 0px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+    cursor: pointer;
+  }
+}
+
+.nav__select-lang {
+  padding-right: 20px;
+
+  font-family: @circe;
+  font-size: 18px;
+  text-transform: uppercase;
 
   color: #fff;
+  border: none;
+  background-color: transparent;
+
+     -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+
+  outline: none;
+
+  cursor: pointer;
 }

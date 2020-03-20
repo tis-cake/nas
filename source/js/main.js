@@ -7,7 +7,7 @@ var mySwiper = new Swiper('#main-swiper', {
   autoHeight: true,
 
   pagination: {
-    el: '.main-swiper-pagination',
+    el: '.main-swiper__pagination',
     type: 'fraction',
     renderFraction: function (currentClass, totalClass) {
       return '0' + 

@@ -157,6 +157,7 @@ input[type="radio"].visually-hidden {
     // right: -374px;
     // width: 367px;
     height: 2px;
+    background-color: #000;
   }
 }
 
@@ -189,6 +190,31 @@ input[type="radio"].visually-hidden {
   padding-left: 11px;
 }
 
+.arrows-wrap {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 138px;
+  height: 60px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 0;
+}
+
+.swiper-icon-arrow {
+  width: 50px;
+  height: 50px;
+}
+
 .mt100 {
   margin-top: 100px;
 }
@@ -199,6 +225,10 @@ input[type="radio"].visually-hidden {
 
 .mb160 {
   margin-bottom: 160px;
+}
+
+.mb185 {
+  margin-bottom: 185px;
 }
 
 @media (max-width: @mobile-width) {

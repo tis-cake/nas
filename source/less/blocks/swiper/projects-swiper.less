@@ -3,13 +3,14 @@
 }
 
 .projects-swiper__main-title {
-  position: absolute;
-  top: 5px;
-  left: 15px;
+  position: relative;
+  z-index: 2;
+  top: 98px;
+  // max-width: 870px;
+  max-width: 920px;
 
   font-weight: 700;
   font-size: 80px;
-  // letter-spacing: 0.05em;
   text-transform: uppercase;
   &--stroke {
     color: transparent;
@@ -20,7 +21,6 @@
 
 .projects-swiper__container {
   padding-top: 205px;
-  // padding-bottom: 90px;
 }
 
 .projects-swiper__link {
@@ -32,9 +32,8 @@
   top: 20px;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1110px) {
   .projects-swiper__container {
-    padding-top: 270px;
     padding-bottom: 90px;
   }
 

@@ -1,6 +1,6 @@
 // [index page]
 // главный слайдер
-var mySwiper = new Swiper('#main-swiper', {
+var mainSwiper = new Swiper('#main-swiper', {
   // effect: 'fade',
   // fadeEffect: { crossFade: true },
 
@@ -24,10 +24,8 @@ var mySwiper = new Swiper('#main-swiper', {
   },
 });
 
-var mySwiper = new Swiper('#projects-swiper', {
-  // effect: 'fade',
-  // fadeEffect: { crossFade: true },
-
+// главный слайдер
+var projectsSwiper = new Swiper('#projects-swiper', {
   slidesPerView: 1,
   autoHeight: true,
   // spaceBetween: 100,
@@ -43,4 +41,22 @@ var mySwiper = new Swiper('#projects-swiper', {
       spaceBetween: 100
     }
   }
+});
+
+var newsSwiper = new Swiper('#news-swiper', {
+  slidesPerView: 2,
+  autoHeight: true,
+  // spaceBetween: 100,
+
+  navigation: {
+    nextEl: '.news-swiper__button-next',
+    prevEl: '.news-swiper__button-prev',
+  },
+
+  // breakpoints: {
+  //   1110: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 100
+  //   }
+  // }
 });

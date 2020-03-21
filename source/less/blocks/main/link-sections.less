@@ -3,19 +3,18 @@
 
 .link-sections__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-
-  // grid-template-columns: repeat(auto-fill, 647px);
-  // justify-content: space-between;
 }
 
 .link-sections__item {
-  // max-width: 647px;
+  // .margin-inline(10px);
   margin-bottom: 100px;
-  // .margin-inline(@a);
-  &:nth-child(2n) {
-    // justify-self: end;
+  &:nth-child(odd) {
+    margin-left: 5px;
+  }
+  &:nth-child(even) {
+    margin-left: 5px;
   }
 }
 
@@ -59,5 +58,8 @@
   padding-left: 11px;
 }
 
-.link-sections__icon-arrow--right {
+@media (max-width: 1342px) {
+  .link-sections__list {
+    justify-content: space-around;
+  }
 }

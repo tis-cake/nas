@@ -103,8 +103,14 @@ input[type="radio"].visually-hidden {
   .padding-inline(20px);
 }
 
-.container-inside {
-  max-width: 1400px;
+// .container-inside {
+//   max-width: 1400px;
+//   .margin-inline(@a);
+//   .padding-inline(20px);
+// }
+
+.container-outside {
+  max-width: 1510px;
   .margin-inline(@a);
   .padding-inline(20px);
 }
@@ -154,9 +160,10 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.btn {
+.link {
   position: relative;
-  display: flex;
+  // display: flex;
+  display: inline-flex;
   align-items: center;
 
   font-weight: bold;
@@ -178,8 +185,16 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.icon-arrow-right {
+  padding-left: 11px;
+}
+
 .mt100 {
   margin-top: 100px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
 }
 
 .mb160 {

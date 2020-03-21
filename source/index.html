@@ -179,7 +179,7 @@
       </div>
     </section>
 
-    <section class="link-sections container-inside container-inside">
+    <section class="link-sections container mb30">
       <ul class="link-sections__list">
         <li class="link-sections__item">
           <a class="link-sections__link" href="about.html" title="Переход на страницу «О нас»">
@@ -188,11 +188,11 @@
               <img class="link-sections__img" src="img/link-sections/1.jpg" alt="">
             </div>
             <p class="link-sections__desc">О проекте НАС, лечение и социализация наркозависимых</p>
-            <button class="link-sections__btn-link btn btn--circle">Подробнее
-              <svg class="link-sections__icon-arrow link-sections__icon-arrow--right" width="50" height="50" aria-hidden="true" role="presentation">
+            <div class="link-sections__btn-link link link--circle">Подробнее
+              <svg class="link-sections__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
                 <use xlink:href="#icon-arrow-right"></use>
               </svg>
-            </button>
+            </div>
           </a>
         </li>
         <li class="link-sections__item">
@@ -202,15 +202,92 @@
               <img class="link-sections__img" src="img/link-sections/2.jpg" alt="">
             </div>
             <p class="link-sections__desc">Реабилитация в центрах и прохождение детоксикации в клинике</p>
-            <button class="link-sections__btn-link btn btn--circle">Подробнее
-              <svg class="link-sections__icon-arrow link-sections__icon-arrow--right" width="50" height="50" aria-hidden="true" role="presentation">
+            <div class="link-sections__btn-link link link--circle">Подробнее
+              <svg class="link-sections__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
                 <use xlink:href="#icon-arrow-right"></use>
               </svg>
-            </button>
+            </div>
           </a>
         </li>
       </ul>
-    </section>  
+    </section>
+
+    <article class="slogan">
+      <div class="slogan__bg-img-wrap">
+        <picture>
+          <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/slogan/1-m.webp"> -->
+          <!-- <source media="(max-width: 750px)" srcset="img/slogan/1-m.jpg"> -->
+          <!-- <source type="image/webp" srcset="img/slogan/1-d.webp"> -->
+          <img class="slogan__bg-img" src="img/slogan/1-d.jpg" alt="">
+        </picture>
+      </div>
+      <div class="slogan__content-wrap">
+        <div class="slogan__intro-wrap container">
+          <p class="slogan__intro-slogan">Если мы продолжим закрывать глаза на проблему наркомании она не исчезнет!</p>
+          <p class="slogan__subtitle subtitle">Но исчезнут миллионы людей, в том числе детей и подростков!</p>
+        </div>
+        <h2 class="slogan__title container-outside">
+          <span class="slogan__title-item slogan__title-item--stroke slogan__title-item--end">Не будь равнодушным</span>
+          <span class="slogan__title-item slogan__title-item--ml80">Поддержи программы</span>
+          <span class="slogan__title-item slogan__title-item--stroke slogan__title-item--ml270">Нашего союза!</span>
+        </h2>
+        <div class="slogan__link-wrap container">
+          <a class="slogan__link link" href="howhelp.html">Как я могу помочь?
+            <svg class="slogan__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>  
+    </article>
+
+    <section class="projects-swiper container">
+      <h2 class="projects-swiper__title">
+        Ключевые
+        <span class="projects-swiper__title--stroke">проекты</span>
+      </h2>
+      <div class="swiper-container projects-swiper__container" id="projects-swiper">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="projects-swiper__link" href="#">
+              <p class="projects-swiper__subtitle subtitle">
+                Наши проекты
+              </p>
+              <h3 class="projects-swiper__title">
+                Антинаркотический лагерь
+              </h3>
+              <div class="projects-swiper__btn-link link">Подробнее
+                <svg class="projects-swiper__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+              </div>
+              <div class="projects-swiper__img-wrap">
+                <img class="projects-swiper__img" src="" alt="">
+              </div>
+            </a>            
+          </div>
+
+        </div>
+
+        <div class="main-swiper__arrows-wrap">
+          <div class="swiper-button-next main-swiper__button-next">
+            <svg class="main-swiper__icon-arrow main-swiper__icon-arrow--right" width="50" height="50">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-prev main-swiper__button-prev">
+            <svg class="main-swiper__icon-arrow main-swiper__icon-arrow--left" width="50" height="50">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
 
   <footer>

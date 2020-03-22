@@ -283,6 +283,11 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: left;
 }
+.footer__copyright-logo {
+  width: 20px;
+  height: 20px;
+  fill: #808080;
+}
 .social-links__list {
   display: flex;
 }
@@ -603,6 +608,9 @@ input[type="radio"].visually-hidden {
   width: 50px;
   height: 50px;
 }
+.hidden.swiper-pagination-current-zero {
+  display: none;
+}
 .main-swiper {
   counter-reset: imgCount;
 }
@@ -884,7 +892,7 @@ input[type="radio"].visually-hidden {
 .footer__column-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 .footer__list {
   margin-bottom: 33px;

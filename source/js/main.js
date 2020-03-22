@@ -4,7 +4,7 @@ var mainSwiper = new Swiper('#main-swiper', {
   // effect: 'fade',
   // fadeEffect: { crossFade: true },
 
-  autoHeight: true,
+  // autoHeight: true,
 
   pagination: {
     el: '.main-swiper__pagination',
@@ -24,10 +24,10 @@ var mainSwiper = new Swiper('#main-swiper', {
   },
 });
 
-// главный слайдер
+// слайдер проектов
 var projectsSwiper = new Swiper('#projects-swiper', {
   slidesPerView: 1,
-  autoHeight: true,
+  // autoHeight: true,
   // spaceBetween: 100,
 
   navigation: {
@@ -43,20 +43,20 @@ var projectsSwiper = new Swiper('#projects-swiper', {
   }
 });
 
-var newsSwiper = new Swiper('#news-swiper', {
-  slidesPerView: 2,
-  autoHeight: true,
-  // spaceBetween: 100,
+// слайдер новостей/полезный статей
+var twoArticlesSwiper = new Swiper('#two-articles-swiper', {
+  slidesPerView: 1,
+  // autoHeight: true,
 
   navigation: {
-    nextEl: '.news-swiper__button-next',
-    prevEl: '.news-swiper__button-prev',
+    nextEl: '.two-articles-swiper__button-next',
+    prevEl: '.two-articles-swiper__button-prev',
   },
 
-  // breakpoints: {
-  //   1110: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 100
-  //   }
-  // }
+  breakpoints: {
+    1110: {
+      slidesPerView: 2,
+      spaceBetween: 100
+    }
+  }
 });

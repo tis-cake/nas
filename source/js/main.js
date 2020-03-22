@@ -60,3 +60,32 @@ var twoArticlesSwiper = new Swiper('#two-articles-swiper', {
     }
   }
 });
+
+// слайдер отзывов
+var reviewsSwiper = new Swiper('#reviews-swiper', {
+  slidesPerView: 1,
+
+  pagination: {
+    el: '.reviews-swiper__pagination',
+    type: 'fraction',
+    renderFraction: function (currentClass, totalClass) {
+      return '<span class="swiper-pagination-current-zero">0</span>' + 
+             '<span class="' + currentClass + '"></span>' +
+             ' / ' +
+             '0' +
+             '<span class="' + totalClass + '"></span>';
+    }
+  },
+
+  navigation: {
+    nextEl: '.reviews-swiper__button-next',
+    prevEl: '.reviews-swiper__button-prev',
+  },
+
+  // breakpoints: {
+  //   1110: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 100
+  //   }
+  // }
+});

@@ -69,11 +69,21 @@ var reviewsSwiper = new Swiper('#reviews-swiper', {
     el: '.reviews-swiper__pagination',
     type: 'fraction',
     renderFraction: function (currentClass, totalClass) {
+      var reviewsSwiperArr = document.querySelectorAll('.reviews-swiper__slide');
+      if (reviewsSwiperArr.length > 10) {
+        // console.log('больше');
+        return '<span class="swiper-pagination-current-zero">0</span>' + 
+             '<span class="' + currentClass + '"></span>' +
+             ' / ' +
+             '<span class="' + totalClass + '"></span>';
+      } else {
+
       return '<span class="swiper-pagination-current-zero">0</span>' + 
              '<span class="' + currentClass + '"></span>' +
              ' / ' +
              '0' +
              '<span class="' + totalClass + '"></span>';
+           }
     }
   },
 
@@ -89,3 +99,35 @@ var reviewsSwiper = new Swiper('#reviews-swiper', {
   //   }
   // }
 });
+
+reviewsSwiper.on('slideChange', function () {
+  // console.log('slide changed');
+  console.log(reviewsSwiper.activeIndex+1);
+  if (this.activeIndex+1 >= 10) {
+    // console.log('bleaaa');
+    // renderFraction() {
+      // return console.log('ssss');
+    // }
+  }
+});
+
+// function updateFraction (reviewsSwiper) {
+//   console.log(this.activeIndex+1);
+//   if (this.activeIndex+1 >= 10) {
+//     console.log('bleaaa');
+//   }
+// }
+
+// console.log(reviewsSwiper.activeIndex+1);
+// var reviewsCurrent = reviewsSwiper.activeIndex+1;
+// if (reviewsCurrent >= 10) {
+//   console.log('bleaaa');
+// }
+
+// console.log(reviewsCurrent.length);
+
+// var reviewsSwiperArr = document.querySelectorAll('.reviews-swiper__slide');
+// console.log(reviewsSwiperArr.length);
+// if (reviewsSwiperArr.length > 10) {
+//   console.log('больше');
+// }

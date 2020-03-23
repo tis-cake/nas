@@ -83,3 +83,40 @@
   font-size: 18px;
   line-height: 25px;
 }
+
+@media (max-width: 1440px) {
+ .reviews-swiper__pagination {
+    left: @a;
+    right: 270px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .reviews-swiper__main-title-wrap {
+    margin-left: 0px;
+  }
+  .reviews-swiper__blockquote {
+    flex-direction: column;
+  }
+
+  .reviews-swiper__text-wrap {
+    padding-top: 20px;
+  }
+
+  .reviews-swiper__arrows-wrap {
+    position: absolute;
+    top: 40px;
+    bottom: @a;
+    width: 200px;
+  }
+
+  .reviews-swiper__button-next,
+  .reviews-swiper__button-prev {
+    font-size: 0;
+  }
+
+  .reviews-swiper__pagination {
+    top: 20px;
+    right: 50px;
+  }
+}

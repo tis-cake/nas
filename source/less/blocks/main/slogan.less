@@ -20,6 +20,7 @@
 }
 
 .slogan__content-wrap {
+  box-sizing: border-box;
   padding-top: 71px;
 }
 
@@ -53,25 +54,19 @@
 
   min-height: 300px;
   margin-bottom: 35px;
-
   font-weight: 800;
   font-size: 85px;
   line-height: 100px;
 
   text-transform: uppercase;
 
-  &--fz110 {
+  &--big {
     font-size: 110px;
     line-height: 120px;
   }
 }
 
 .slogan__title-item {
-  &--stroke{
-    // color: transparent;
-    // -webkit-text-stroke-width: 2px;
-    // -webkit-text-stroke-color: #fff;
-  }
   &--end {
     align-self: flex-end;
   }
@@ -128,5 +123,89 @@
   .slogan__title {
     font-size: 45px;
     line-height: 60px;
+  }
+}
+
+@media (max-width: 750px) {
+  .slogan {
+    min-height: 0;
+  }
+
+  .slogan-second {
+    margin-bottom: 154px;
+  }
+
+  .slogan__intro-slogan,
+  .slogan__subtitle {
+    color: #000;
+  }
+
+  .slogan__intro-slogan {
+    position: relative;
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 29px;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 2px;
+      bottom: -25px;
+
+      width: 57px;
+      height: 2px;
+      background-color: #000;
+    }
+  }
+
+  .slogan__subtitle {
+    margin-bottom: 28px;
+    font-weight: normal;
+    line-height: 27px;
+    &::after {
+      content: none;
+    }
+  }
+
+  .slogan__bg-img-wrap {
+    height: 425px;
+  }
+
+  .slogan__content-wrap {
+    height: 425px;
+    margin-bottom: 20px;
+    padding-top: 45px;
+  }
+
+  .slogan-second {
+    .slogan__bg-img-wrap,
+    .slogan__content-wrap {
+      height: 267px;
+    }
+    .slogan__content-wrap {
+      margin-bottom: 10px;
+    }
+  }
+
+  .slogan__title {
+    min-height: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    &--big {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  .slogan__link {
+    font-size: 20px;
+    color: #000;
+  }
+
+  .slogan__icon-arrow {
+    width: 42px;
+    padding-left: 21px;
+    fill: #000;
   }
 }

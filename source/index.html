@@ -17,6 +17,9 @@
   <header class="header">
     <div class="header__block-top">
       <div class="header__content-wrap container">
+        <button class="header__menu-toggle menu-toggle">
+          <span>Открыть меню</span>
+        </button>
         <div class="header__logo logo">
           <div class="logo__img-wrap">
             <img class="logo__img logo__img--position" src="img/logo.png" alt="Логотип Национального Антинаркотического Союза">
@@ -29,17 +32,21 @@
             </p>
           </div>      
         </div>
+        <button class="header__search-toggle">
+          <svg class="icon-search header__search-toggle-icon" width="30" height="30">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </button>
         <div class="header__search search">
           <form class="search__form" action=".php" method="post">
             <input class="search__input" id="search-field" type="search" name="SEARCH" placeholder="Поиск по сайту" autofocus>
             <label class="search__icon" for="search-field">
-              <svg class="icon-search" width="20" height="20">
+              <svg class="icon-search search__icon-item" width="20" height="20">
                 <use xlink:href="#icon-search"></use>
               </svg>
             </label>
           </form>
         </div>
-        
         <div class="header__social-links social-links">
           <ul class="social-links__list">
             <li class="social-links__item">
@@ -108,6 +115,42 @@
             <option value="LANG-CHINESE">ZH</option>
           </select>
         </form>
+        <div class="nav__social-links social-links">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наш канал на YouTube" aria-label="Наш канал на YouTube">
+                <svg class="social-links__icon social-links__icon--big icon-youtube" width="30" height="30">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Наш канал на YouTube</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Twitter" aria-label="Наша страница в Twitter">
+                <svg class="social-links__icon social-links__icon--big icon-twitter" width="30" height="30">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Twitter</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Facebook" aria-label="Наша страница в Facebook">
+                <svg class="social-links__icon social-links__icon--big icon-facebook" width="30" height="30">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Facebook</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Instagram" aria-label="Наша страница в Instagram">
+                <svg class="social-links__icon social-links__icon--big icon-instagram" width="30" height="30">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -130,144 +173,156 @@
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Отсутсвие объективной оценки количества наркозависимых на территории России</h2>
-                <p class="main-swiper__desc">На территории России боле 8 млн. наркозависимых</p>
+                <p class="main-swiper__desc desktop-block">На территории России боле 8 млн. наркозависимых</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Vita vostra mala erit, sed brevis nihilominus</h2>
-                <p class="main-swiper__desc">Carthago delenda est</p>
+                <p class="main-swiper__desc desktop-block">Carthago delenda est</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Sum experrectus et ad opus ivi, quia melius non inveni</h2>
-                <p class="main-swiper__desc">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
+                <p class="main-swiper__desc desktop-block">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/2.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Отсутсвие объективной оценки количества наркозависимых на территории России</h2>
-                <p class="main-swiper__desc">На территории России боле 8 млн. наркозависимых</p>
+                <p class="main-swiper__desc desktop-block">На территории России боле 8 млн. наркозависимых</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Vita vostra mala erit, sed brevis nihilominus</h2>
-                <p class="main-swiper__desc">Carthago delenda est</p>
+                <p class="main-swiper__desc desktop-block">Carthago delenda est</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Sum experrectus et ad opus ivi, quia melius non inveni</h2>
-                <p class="main-swiper__desc">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
+                <p class="main-swiper__desc desktop-block">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/2.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Отсутсвие объективной оценки количества наркозависимых на территории России</h2>
-                <p class="main-swiper__desc">На территории России боле 8 млн. наркозависимых</p>
+                <p class="main-swiper__desc desktop-block">На территории России боле 8 млн. наркозависимых</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Vita vostra mala erit, sed brevis nihilominus</h2>
-                <p class="main-swiper__desc">Carthago delenda est</p>
+                <p class="main-swiper__desc desktop-block">Carthago delenda est</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Sum experrectus et ad opus ivi, quia melius non inveni</h2>
-                <p class="main-swiper__desc">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
+                <p class="main-swiper__desc desktop-block">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/2.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Отсутсвие объективной оценки количества наркозависимых на территории России</h2>
-                <p class="main-swiper__desc">На территории России боле 8 млн. наркозависимых</p>
+                <p class="main-swiper__desc desktop-block">На территории России боле 8 млн. наркозависимых</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Vita vostra mala erit, sed brevis nihilominus</h2>
-                <p class="main-swiper__desc">Carthago delenda est</p>
+                <p class="main-swiper__desc desktop-block">Carthago delenda est</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/1.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
 
           <div class="swiper-slide main-swiper__slide">
             <div class="main-swiper__text-block container">
               <div class="main-swiper__text-wrap">
                 <h2 class="main-swiper__title">Sum experrectus et ad opus ivi, quia melius non inveni</h2>
-                <p class="main-swiper__desc">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
+                <p class="main-swiper__desc desktop-block">ad ut recusandae sunt perferendis quisquam, facilis optio quae eius libero. Expedita, maxime libero sint suscipit consequuntur animi omnis!</p>
               </div>
             </div>
             <div class="main-swiper__img-block">
               <img class="main-swiper__img" src="img/swiper/main-swiper/2.jpg" alt="">
             </div>
+            <p class="main-swiper__desc mobile-block">На территории России боле 8 млн. наркозависимых</p>
           </div>
         </div>
         
@@ -320,16 +375,20 @@
     </section>
 <!-- 160 -->
     <article class="slogan mb70">
+      <div class="slogan__intro-wrap mobile-block container">
+        <p class="slogan__intro-slogan">Если мы продолжим закрывать глаза на проблему наркомании она не исчезнет!</p>
+        <p class="slogan__subtitle subtitle">Но исчезнут миллионы людей, в том числе детей и подростков!</p>
+      </div>
       <div class="slogan__bg-img-wrap">
         <picture>
-          <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/slogan/1-m.webp"> -->
-          <!-- <source media="(max-width: 750px)" srcset="img/slogan/1-m.jpg"> -->
-          <!-- <source type="image/webp" srcset="img/slogan/1-d.webp"> -->
+          <source type="image/webp" media="(max-width: 750px)" srcset="img/slogan/1-m.webp">
+          <source media="(max-width: 750px)" srcset="img/slogan/1-m.jpg">
+          <source type="image/webp" srcset="img/slogan/1-d.webp">
           <img class="slogan__bg-img" src="img/slogan/1-d.jpg" alt="">
         </picture>
       </div>
       <div class="slogan__content-wrap">
-        <div class="slogan__intro-wrap container">
+        <div class="slogan__intro-wrap desktop-block container">
           <p class="slogan__intro-slogan">Если мы продолжим закрывать глаза на проблему наркомании она не исчезнет!</p>
           <p class="slogan__subtitle subtitle">Но исчезнут миллионы людей, в том числе детей и подростков!</p>
         </div>
@@ -338,14 +397,19 @@
           <span class="slogan__title-item slogan__title-item--ml80">Поддержи программы</span>
           <span class="slogan__title-item slogan__title-item--ml270 stroke stroke--white">Нашего союза!</span>
         </h2>
-        <div class="slogan__link-wrap container">
+        <div class="slogan__link-wrap desktop-block container">
           <a class="slogan__link link" href="howhelp.html">Как я могу помочь?
             <svg class="slogan__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
           </a>
         </div>
-      </div>  
+      </div>
+      <a class="slogan__link container link" href="howhelp.html">Как я могу помочь?
+        <svg class="slogan__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </a>
     </article>
 
     <section class="projects-swiper container mb185">
@@ -429,32 +493,41 @@
       </div>
     </section>
 <!-- 160 -->
-    <article class="slogan mb70">
+    <article class="slogan slogan-second mb70">
+      <div class="slogan__intro-wrap container">
+        <p class="slogan__intro-slogan">Национальный антинаркотический союз</p>
+        <p class="slogan__subtitle subtitle">Не оставайтесь равнодушными</p>
+      </div>
       <div class="slogan__bg-img-wrap">
         <picture>
-          <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/slogan/1-m.webp"> -->
-          <!-- <source media="(max-width: 750px)" srcset="img/slogan/1-m.jpg"> -->
-          <!-- <source type="image/webp" srcset="img/slogan/1-d.webp"> -->
+          <source type="image/webp" media="(max-width: 750px)" srcset="img/slogan/2-m.webp">
+          <source media="(max-width: 750px)" srcset="img/slogan/2-m.jpg">
+          <source type="image/webp" srcset="img/slogan/2-d.webp">
           <img class="slogan__bg-img" src="img/slogan/2-d.jpg" alt="">
         </picture>
       </div>
       <div class="slogan__content-wrap">
-        <div class="slogan__intro-wrap container">
+        <div class="slogan__intro-wrap desktop-block container">
           <p class="slogan__intro-slogan">НАС</p>
           <p class="slogan__subtitle subtitle">Не оставайтесь равнодушными</p>
         </div>
-        <h2 class="slogan__title slogan__title--fz110 container-outside">
+        <h2 class="slogan__title slogan__title--big container-outside">
           <span class="slogan__title-item slogan__title-item--ml270 stroke stroke--white">международная</span>
           <span class="slogan__title-item slogan__title-item--ml175">практика</span>
         </h2>
-        <div class="slogan__link-wrap container">
-          <a class="slogan__link link" href="howhelp.html">Как помочь?
+        <div class="slogan__link-wrap desktop-block container">
+          <a class="slogan__link link" href="howhelp.html">Как я могу помочь?
             <svg class="slogan__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
           </a>
         </div>
-      </div>  
+      </div>
+      <a class="slogan__link container link" href="howhelp.html">Как я могу помочь?
+        <svg class="slogan__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </a>
     </article>
 
     <section class="two-articles-swiper container mb230">

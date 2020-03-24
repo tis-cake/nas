@@ -8,7 +8,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const server = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
-const uglify = require('gulp-uglify');
+// const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -32,7 +33,7 @@ gulp.task("css", function () {
 gulp.task('js', function () {
   return gulp.src("source/js/main.js")
     .pipe(uglify({
-      toplevel: true
+      // toplevel: true
     }))
     .pipe(gulp.dest('./build/js'))
     .pipe(server.stream());

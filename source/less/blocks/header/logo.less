@@ -24,7 +24,7 @@
 }
 
 .logo__text-wrap {
-  width: 185px;
+  max-width: 185px;
 }
 
 .logo__text {
@@ -47,4 +47,28 @@
   width: 20px;
   height: 20px;
   fill: #808080;
+}
+
+@media (max-width: 750px) {
+  .logo__img-wrap {
+    width: 60px;
+    height: 60px;
+    &--big {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  .logo__img {
+    &--position {
+      object-position: 0;
+    }
+  }
+  .logo__text-wrap {
+    margin-left: 4px;
+  }
+  .logo__text-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

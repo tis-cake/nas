@@ -1,7 +1,30 @@
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+
+// мобильное меню
+let mobileMenu = header.querySelector('.header__block-bottom');
+let menuToggle = header.querySelector(".menu-toggle");
+menuToggle.addEventListener('click', function(evt) {
+  body.classList.toggle('noscroll');
+  this.classList.toggle('active');
+  header.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+  searchToggle.classList.toggle('hidden');
+  searchHeader.classList.toggle('active');
+});
+
+// мобильный поиск
+let searchToggle = header.querySelector('.header__search-toggle');
+let searchHeader = header.querySelector('.header__search');
+searchToggle.addEventListener('click', function(evt) {
+  this.classList.toggle('active');
+})
+
+
 // [index page]
 // главный слайдер
-var mainSwiperArr = document.querySelectorAll('.main-swiper__slide');
-var mainSwiper = new Swiper('#main-swiper', {
+let mainSwiperArr = document.querySelectorAll('.main-swiper__slide');
+let mainSwiper = new Swiper('#main-swiper', {
   // effect: 'fade',
   // fadeEffect: { crossFade: true },
   pagination: {
@@ -36,7 +59,7 @@ if (mainSwiperArr.length >= 10) {
 }
 
 // слайдер проектов
-var projectsSwiper = new Swiper('#projects-swiper', {
+let projectsSwiper = new Swiper('#projects-swiper', {
   slidesPerView: 1,
 
   navigation: {
@@ -53,7 +76,7 @@ var projectsSwiper = new Swiper('#projects-swiper', {
 });
 
 // слайдер новостей/полезный статей
-var twoArticlesSwiper = new Swiper('#two-articles-swiper', {
+let twoArticlesSwiper = new Swiper('#two-articles-swiper', {
   slidesPerView: 1,
   // autoHeight: true,
 
@@ -71,8 +94,8 @@ var twoArticlesSwiper = new Swiper('#two-articles-swiper', {
 });
 
 // слайдер отзывов
-var reviewsSwiperArr = document.querySelectorAll('.reviews-swiper__slide');
-var reviewsSwiper = new Swiper('#reviews-swiper', {
+let reviewsSwiperArr = document.querySelectorAll('.reviews-swiper__slide');
+let reviewsSwiper = new Swiper('#reviews-swiper', {
   slidesPerView: 1,
 
   pagination: {
@@ -131,9 +154,9 @@ if (reviewsSwiperArr.length >= 10) {
 // индекс активного слайда >= 10 - скрыть "0", иначе если < 10 - показать
 function updateFraction(slider) {
   
-  var sliderActiveIndex = slider.activeIndex + 1;
-  var sliderElement = slider.el;
-  var fractionActiveZero = sliderElement.querySelector('.swiper-pagination-current-zero');
+  let sliderActiveIndex = slider.activeIndex + 1;
+  let sliderElement = slider.el;
+  let fractionActiveZero = sliderElement.querySelector('.swiper-pagination-current-zero');
 
   if (sliderActiveIndex >= 10) {
     fractionActiveZero.classList.add('hidden');

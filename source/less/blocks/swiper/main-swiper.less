@@ -1,5 +1,5 @@
 .main-swiper {
-  counter-reset: imgCount;
+  counter-reset: mainSwiperCurrent;
 }
 
 .main-swiper__subtitle-wrap {
@@ -57,8 +57,8 @@
   .margin-inline(@a);
 
   &::before {
-    counter-increment: imgCount;
-    content: counter(imgCount, decimal-leading-zero);
+    counter-increment: mainSwiperCurrent;
+    content: counter(mainSwiperCurrent, decimal-leading-zero);
 
     position: absolute;
     top: -153px;
@@ -89,8 +89,6 @@
   .main-swiper__arrows-wrap {
     right: 255px;
     transform: none;
-    // right: 50%;
-    // transform: translateX(705px);
   }
 }
 
@@ -108,15 +106,6 @@
     top: 50px;
     right: @a;
     left: 0;
-    // transform: translateX(-@d800px);
-    // width: @d150px;
-  }
-
-  .main-swiper__button-prev,
-  .main-swiper__button-next,
-  .main-swiper__icon-arrow {
-    // width: @d50px;
-    // height: @d50px;
   }
 
   .main-swiper__img-block {
@@ -128,16 +117,91 @@
   }
 }
 
-@media (max-width: 1020px) {
-  .main-swiper__arrows-wrap {
-    // transform: translateX(-@d740px);
-    // width: 90px;
+@media (max-width: 750px) {
+  .main-swiper {
+    margin-top: 0;
   }
 
-  // .main-swiper__button-prev,
-  // .main-swiper__button-next,
-  // .main-swiper__icon-arrow {
-  //   width: 30px;
-  //   height: 30px;
-  // }
+  .main-swiper__pagination {
+    display: none;
+  }
+
+  .main-swiper__subtitle-wrap {
+    position: relative;
+    margin-bottom: 0px;
+    top: 40px;
+    max-width: 260px;
+    margin-left: 0;
+  }
+
+  .main-swiper__subtitle {
+    &::after {
+      bottom: 9px;
+      right: -159px;
+      height: 3px;
+      width: 135px;
+    }
+  }
+
+  .main-swiper__arrows-wrap {
+    width: 124px;
+    top: -3.5px;
+    right: 18px;
+    left: @a;
+  }
+
+  .main-swiper__button-next,
+  .main-swiper__button-prev {
+    width: 42px;
+  }
+
+  .main-swiper__container {
+    padding-top: 80px;
+  }
+
+  .main-swiper__text-wrap {
+    min-height: 0px;
+    margin-left: 0;
+    margin-bottom: 38px;
+  }
+
+  .main-swiper__title {
+    margin-bottom: 0px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .main-swiper__img-block {
+    height: 212px;
+    margin-right: 28px;
+    margin-bottom: 45px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .main-swiper__desc {
+    position: relative;
+    max-width: 240px;
+    margin-left: 134px;
+    margin-bottom: 20px;
+
+    &::before {
+      counter-increment: mainSwiperCurrent;
+      content: counter(mainSwiperCurrent, decimal-leading-zero);
+
+      position: absolute;
+      top: 19px;
+      left: -120px;
+
+      font-weight: 800;
+      font-size: 100px;
+
+      color: transparent;
+
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #1c1818;
+    }
+  }
 }

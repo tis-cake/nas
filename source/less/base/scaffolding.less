@@ -115,28 +115,12 @@ input[type="radio"].visually-hidden {
   .padding-inline(20px);
 }
 
-// .container-out-right {
-//   width: 92.187vw; // 1770px 
-//   margin-left: @a;
-// }
-
-// .double-main-wrapper {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .double-column-wrapper {
-//   width: 62vw; // 1190 px
-//   padding-top: @d20px;
-// }
-
-// .double-aside-wrapper {
-//   width: @d382px;
-//   padding-top: @d20px;
-// }
-
-.hidden-mobile-block {
+.mobile-block {
   display: none;
+}
+
+.desktop-block {
+  display: block;
 }
 
 // .warning__input:-moz-submit-invalid,
@@ -154,8 +138,6 @@ input[type="radio"].visually-hidden {
     content: '';
     position: absolute;
     bottom: 6px;
-    // right: -374px;
-    // width: 367px;
     height: 2px;
     background-color: #000;
   }
@@ -163,7 +145,6 @@ input[type="radio"].visually-hidden {
 
 .link {
   position: relative;
-  // display: flex;
   display: inline-flex;
   align-items: center;
 
@@ -200,67 +181,29 @@ input[type="radio"].visually-hidden {
   padding-left: 11px;
 }
 
-.mt100 {
-  margin-top: 100px;
-}
-
-.mb30 {
-  margin-bottom: 30px;
-}
-
-.mb70 {
-  margin-bottom: 68px;
-}
-
-.mb160 {
-  margin-bottom: 160px;
-}
-
-.mb185 {
-  margin-bottom: 185px;
-}
-
-.mb200 {
-  margin-bottom: 200px;
-}
-
-.mb230 {
-  margin-bottom: 230px;
-}
-
 @media (max-width: @mobile-width) {
-  // .container,
-  // .container-out-right {
-  //   width: auto;
-  //   .padding-inline(@m35px);
-  // }
-  // .double-column-wrapper {
-  //   width: @m678px;
-  // }
-  // .double-aside-wrapper {
-  //   display: none;
-  // }
-  // .hidden-desktop-block {
-  //   display: none;
-  // }
-  // .hidden-mobile-block {
-  //   display: block;
-  // }
-}
+  .container,
+  .container-outside {
+    .padding-inline(25px);
+  }
 
-@media (min-width: @max-desktop-width) {
-  
-  // .container-out-right {
-  //   width: 1770px;
-  //   margin-right: @a;
-  //   transform: translateX(75px);
-  // }
-  // .double-column-wrapper {
-  //   width: 1190px;
-  //   padding-top: 20px;
-  // }
-  // .double-aside-wrapper {
-  //   width: 382px;
-  //   padding-top: 20px;
-  // }
+  .desktop-block {
+    display: none;
+  }
+  .mobile-block {
+    display: block;
+  }
+
+  .subtitle {
+    &::after {
+      height: 2px;
+      border-radius: 2px;
+    }
+  }
+
+  .icon-arrow-right {
+    // width: 42px;
+    // padding-left: 21px;
+    // padding-left: 11px;
+  }
 }

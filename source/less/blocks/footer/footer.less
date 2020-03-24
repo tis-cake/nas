@@ -93,7 +93,7 @@
 
   .footer__column-left,
   .footer__column-right {
-    max-width: 170px;
+    width: 50%;
   }
 
   .footer__item {
@@ -108,11 +108,19 @@
     padding-top: 75px;
   }
 
-  .footer__column-right {
-    text-align: left;
-  }
-
   .footer__copyright-text {
     padding-left: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__column-left,
+  .footer__column-right {
+    // width: @a;
+    max-width: 170px;
+  }
+
+  .footer__column-right {
+    text-align: left;
   }
 }

@@ -83,6 +83,9 @@
 
 .slogan__link {
   font-size: 22px;
+  &.mobile-block {
+    display: none;
+  }
 }
 
 .slogan__icon-arrow {
@@ -183,6 +186,10 @@
     }
     .slogan__content-wrap {
       margin-bottom: 10px;
+      padding-top: 82px;
+    }
+    .slogan__title {
+    line-height: 59px;
     }
   }
 
@@ -199,9 +206,11 @@
   }
 
   .slogan__link {
-    display: inline-flex!important;
     font-size: 20px;
     color: #000;
+    &.mobile-block {
+      display: inline-flex;
+    }
   }
 
   .slogan__icon-arrow {

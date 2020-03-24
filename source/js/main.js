@@ -78,7 +78,7 @@ let projectsSwiper = new Swiper('#projects-swiper', {
 // слайдер новостей/полезный статей
 let twoArticlesSwiper = new Swiper('#two-articles-swiper', {
   slidesPerView: 1,
-  // autoHeight: true,
+  autoHeight: true,
 
   navigation: {
     nextEl: '.two-articles-swiper__button-next',

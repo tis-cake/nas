@@ -1,0 +1,139 @@
+.two-articles-swiper {
+}
+
+.two-articles-swiper__main-title-wrap {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  
+  top: 90px;
+  max-width: 940px;
+}
+
+.two-articles-swiper__main-title {
+  margin-right: 15px;
+
+  font-weight: 800;
+  font-size: 90px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.two-articles-swiper__container {
+  padding-top: 171px;
+}
+
+.two-articles-swiper__item {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 647px;
+  min-height: 472px;
+}
+
+.two-articles-swiper__title {
+  margin-bottom: 19px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.two-articles-swiper__desc {
+  max-width: 585px;
+  font-size: 20px;
+  line-height: 29px;
+  &:last-of-type {
+    margin-bottom: 27px;
+  }
+}
+
+.two-articles-swiper__img-wrap {
+  margin-bottom: 27px;
+  height: 270px;
+}
+
+.two-articles-swiper__img {
+  .img-cover;
+}
+
+.two-articles-swiper__datetime {
+  margin-top: @a;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.two-articles-swiper__arrows-wrap {
+  top: 6px;
+}
+
+@media (max-width: 1110px) {
+  .two-articles-swiper__item,
+  .two-articles-swiper__desc {
+    max-width: none;
+  }
+
+  .two-articles-swiper__item {
+    min-height: 0;
+  }
+
+  .two-articles-swiper__container {
+    padding-bottom: 90px;
+  }
+
+  .two-articles-swiper__arrows-wrap {
+    top: @a;
+    right: 50%;
+    bottom: 0px;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 750px) {
+  .two-articles-swiper {
+  }
+
+  .two-articles-swiper__main-title-wrap {
+    top: 0px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+  }
+
+  .two-articles-swiper__main-title {
+    margin-right: 0;
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .two-articles-swiper__container {
+    padding-top: 0;
+    padding-bottom: 90px;
+  }
+
+  .two-articles-swiper__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  .two-articles-swiper__desc {
+    font-size: 18px;
+    line-height: 27px;
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
+  }
+
+  .two-articles-swiper__img-wrap {
+    margin-right: 10px;
+    margin-bottom: 28px;
+    height: 195px;
+  }
+
+  .two-articles-swiper__arrows-wrap {
+    bottom: 28px;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,147 @@
+.program {
+}
+
+.program__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.program__item {
+  position: relative;
+  max-width: 647px;
+  margin-bottom: 103px;
+}
+
+.program__link {
+}
+
+.program__img-wrap {
+  max-width: 647px;
+  height: 542px;
+}
+
+.program__img {
+  .img-cover;
+}
+
+.program__content-wrap {
+  box-sizing: border-box;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+
+  padding-top: 36px;
+  padding-left: 27px;
+
+  width: 450px;
+  height: 225px;
+
+  background-color: #E5E5E5;
+}
+
+.program__title {
+  margin-right: 25px;
+  margin-bottom: 21px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.program__content-list {
+  padding-left: 40px;
+}
+
+.program__content-item {
+  position: relative;
+
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 20px;
+
+  &:nth-child(odd) {
+    margin-left: 5px;
+  }
+  &:nth-child(even) {
+    margin-left: 5px;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    top: 6px;
+    left: -41px;
+    width: 28px;
+    height: 3px;
+    background-color: #000;
+  }
+}
+
+@media (max-width: 1340px) {
+  .program__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .program__item {
+    margin-bottom: 83px;
+    width: 100%;
+    // .o;
+  }
+
+  .program__img-wrap {
+    max-width: 367px;
+    height: 435px;
+  }
+
+  .program__content-wrap {
+    height: auto;
+    position: relative;
+    padding-top: 21px;
+    padding-left: 0px;
+  }
+
+  .program__title {
+    box-sizing: border-box;
+
+    position: absolute;
+    top: -154px;
+    left: 0;
+    width: 258px;
+
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-top: 23px;
+    padding-left: 21px;
+    padding-bottom: 90px;
+    font-size: 25px;
+    line-height: 30px;
+
+    background-color: #E5E5E5;
+  }
+
+  .program__content-item {
+    max-width: 325px;
+    &:nth-child(odd) {
+      margin-left: 5px;
+    }
+    &:nth-child(even) {
+      margin-left: 5px;
+    }
+    &::before {
+      top: 6px;
+      left: -24px;
+      width: 16px;
+    }
+  }
+}

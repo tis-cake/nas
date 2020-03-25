@@ -64,5 +64,26 @@
 .active.menu-toggle::after {
   transform: rotate( 45deg);
   transition: 0.3s, transform 0.3s 0.3s;
-  bottom: 14px;
+  bottom: 13px;
+}
+
+@media (max-width: @mobile-width) {
+  .menu-toggle {
+    width: @m34px;
+    height: @m30px;
+    margin-bottom: @m10px;
+  }
+  .menu-toggle span {
+    height: @m3px;
+  }
+  .menu-toggle::before,
+  .menu-toggle::after {
+    height: @m3px;
+  }
+  .active.menu-toggle::before {
+    top: @m14px;
+  }
+  .active.menu-toggle::after {
+    bottom: @m13px;
+  }
 }

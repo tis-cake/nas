@@ -43,3 +43,35 @@
 .hidden.swiper-pagination-current-zero {
   display: none;
 }
+
+@media (max-width: @mobile-width) {
+  .swiper-arrows-wrap {
+    width: @m138px;
+    height: @m60px;
+  }
+
+  .swiper-arrows-text-wrap {
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: @m115px;
+    }
+    .swiper-arrow-next {
+      margin-left: @m15px;
+    }
+    .swiper-arrow-prev {
+      margin-right: @m15px;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: @m50px;
+    height: @m50px;
+    font-size: @m18px;
+  }
+
+  .swiper-icon-arrow {
+    width: @m50px;
+    height: @m50px;
+  }
+}

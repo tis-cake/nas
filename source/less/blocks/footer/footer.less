@@ -10,9 +10,6 @@
   margin-bottom: 3.4rem;
 }
 
-.footer__column-left {
-}
-
 .footer__list {
   margin-bottom: 3.3rem;
 }
@@ -23,9 +20,6 @@
   &--bold {
     font-weight: 700;
   }
-}
-
-.footer__link {
 }
 
 .footer__column-center {
@@ -80,47 +74,68 @@
   color: #808080;
 }
 
-// @media (max-width: 750px) {
-//   .footer {
-//     padding-top: 59px;
-//     padding-bottom: 25px;
-//   }
+@media (max-width: @tablet-width) {
+  .footer {
+    padding-top: 59px;
+    padding-bottom: 25px;
+  }
 
-//   .footer__column-wrap {
-//     flex-wrap: wrap;
-//     margin-bottom: 41px;
-//   }
+  .footer__column-wrap {
+    flex-wrap: wrap;
+    margin-bottom: 41px;
+  }
 
-//   .footer__column-left,
-//   .footer__column-right {
-//     width: 50%;
-//   }
+  .footer__column-left,
+  .footer__column-right {
+    width: 50%;
+  }
 
-//   .footer__item {
-//     margin-bottom: 12.5px;
-//     font-size: 15px;
-//   }
+  .footer__item {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
 
-//   .footer__column-center {
-//     order: 1;
-//     max-width: 310px;
-//     .margin-inline(@a);
-//     padding-top: 75px;
-//   }
+  .footer__column-center {
+    order: 1;
+    max-width: 310px;
+    .margin-inline(@a);
+    padding-top: 75px;
+  }
 
-//   .footer__copyright-text {
-//     padding-left: 15px;
-//   }
-// }
+  .footer__copyright-text {
+    padding-left: 15px;
+  }
+}
 
-// @media (max-width: 420px) {
-//   .footer__column-left,
-//   .footer__column-right {
-//     // width: @a;
-//     max-width: 170px;
-//   }
+@media (max-width: @mobile-width) {
+  .footer {
+    padding-top: @m59px;
+    padding-bottom: @m25px;
+  }
 
-//   .footer__column-right {
-//     text-align: left;
-//   }
-// }
+  .footer__column-wrap {
+    margin-bottom: @m41px;
+  }
+
+  .footer__column-left,
+  .footer__column-right {
+    max-width: 170px;
+  }
+
+  .footer__item {
+    margin-bottom: @m12px;
+    font-size: @m15px;
+  }
+
+  .footer__column-center {
+    padding-top: @m60px;
+  }
+
+  .footer__column-right {
+    text-align: left;
+  }
+
+  .footer__copyright-text {
+    padding-left: @m15px;
+  }
+}

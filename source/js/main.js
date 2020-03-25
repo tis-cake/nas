@@ -69,10 +69,11 @@ let projectsSwiper = new Swiper('#projects-swiper', {
 
   breakpoints: {
     950: {
+      slidesPerView: 2,
       spaceBetween: 100
     },
 
-    750: {
+    755: {
       slidesPerView: 2,
       spaceBetween: 50
     }
@@ -91,10 +92,11 @@ let twoArticlesSwiper = new Swiper('#two-articles-swiper', {
 
   breakpoints: {
     950: {
+      slidesPerView: 2,
       spaceBetween: 100
     },
 
-    750: {
+    755: {
       slidesPerView: 2,
       spaceBetween: 50
     }
@@ -105,6 +107,7 @@ let twoArticlesSwiper = new Swiper('#two-articles-swiper', {
 let reviewsSwiperArr = document.querySelectorAll('.reviews-swiper__slide');
 let reviewsSwiper = new Swiper('#reviews-swiper', {
   slidesPerView: 1,
+  autoHeight: true,
 
   pagination: {
     el: '.reviews-swiper__pagination',
@@ -142,13 +145,6 @@ let reviewsSwiper = new Swiper('#reviews-swiper', {
     nextEl: '.reviews-swiper__button-next',
     prevEl: '.reviews-swiper__button-prev',
   },
-
-  // breakpoints: {
-  //   1110: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 100
-  //   }
-  // }
 });
 
 // работа с нулём в пагинации

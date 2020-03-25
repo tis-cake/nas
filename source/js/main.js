@@ -68,9 +68,13 @@ let projectsSwiper = new Swiper('#projects-swiper', {
   },
 
   breakpoints: {
-    1110: {
-      slidesPerView: 2,
+    950: {
       spaceBetween: 100
+    },
+
+    750: {
+      slidesPerView: 2,
+      spaceBetween: 50
     }
   }
 });
@@ -86,9 +90,13 @@ let twoArticlesSwiper = new Swiper('#two-articles-swiper', {
   },
 
   breakpoints: {
-    1110: {
-      slidesPerView: 2,
+    950: {
       spaceBetween: 100
+    },
+
+    750: {
+      slidesPerView: 2,
+      spaceBetween: 50
     }
   }
 });

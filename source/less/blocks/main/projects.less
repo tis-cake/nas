@@ -51,7 +51,8 @@
     padding-left: 5px;
     &::before {
       top: -30px;
-      height: 336px;
+      // width: 336px;
+      // height: 336px;
     }
   }
 
@@ -92,7 +93,10 @@
     padding-left: @m5px;
     &::before {
       top: -@m30px;
+      left: -@m6px;
+      width: @m336px;
       height: @m336px;
+      border: @m3px solid #fff;
     }
   }
 
@@ -123,7 +127,7 @@
 
   .projects__img-wrap {
     margin-left: @m20px;
-    // max-width: 327px;
+    max-width: @m327px;
     height: @m250px;
   }
 }

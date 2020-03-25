@@ -3,8 +3,7 @@
 }
 
 .header__block-top {
-  // background-color: #F8F9FA;
-  background-color: #EFF1F4;
+  background-color: @bgc;
 }
 
 .header__block-bottom {
@@ -40,6 +39,7 @@
   .active {
     .header__block-top,
     .header__block-bottom {
+      position: relative;
       background-color: #fff;
     }
   }
@@ -68,15 +68,23 @@
 
   .header__block-bottom {
     display: none;
-    position: absolute;
+    // position: absolute;
+    position: relative;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
     z-index: 20;
     width: 100%;
     height: 100vh;
 
-    overflow-y: scroll;
-
     &.active {
       display: block;
+      // position: relative;
+      // height: 100vh;
+
+      // overflow-y: scroll;
+      // overflow-x: hidden;
     }
   }
 

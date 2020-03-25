@@ -12,7 +12,7 @@ body {
   // font-size: 16px;
   // font-size: 62.5%;
   font-size: 1.6rem;
-  background-color: #EFF1F4;
+  background-color: @bgc;
 }
 
 img {
@@ -219,9 +219,9 @@ input[type="radio"].visually-hidden {
 }
 
 @media (max-width: @mobile-width) {
-  // body {
-  //   font-size: @m16px;
-  // }
+  body {
+    font-size: @m16px;
+  }
 
   .container,
   .container-outside {
@@ -234,6 +234,10 @@ input[type="radio"].visually-hidden {
       bottom: @m6px;
       height: @m2px;
     }
+  }
+
+  .stroke {
+    -webkit-text-stroke-width: @m1px;
   }
 
   .link {

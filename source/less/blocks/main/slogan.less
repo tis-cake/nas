@@ -6,6 +6,10 @@
   min-height: 64.3rem;
   .margin-inline(@a);
   margin-bottom: 6.8rem;
+
+  &--mb-bigger {
+    margin-bottom: 11.4rem;
+  }
 }
 
 .slogan__bg-img-wrap {
@@ -248,6 +252,9 @@
 @media (max-width: @mobile-width) {
   .slogan {
     margin-bottom: @m144px;
+    &--mb-bigger {
+      margin-bottom: @m83px;
+    }
   }
 
   .slogan-second {
@@ -306,7 +313,7 @@
   // }
 
   .slogan__title-item {
-    -webkit-text-stroke-width: @m3px;
+    -webkit-text-stroke-width: @m1px;
   }
 
   .slogan__link {

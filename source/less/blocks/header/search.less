@@ -26,6 +26,10 @@
 
 @media (max-width: @mobile-width) {
   .search__input {
+    .padding-block(@m9px);
+    .padding-inline(@m15px, @m45px);
+
+    font-size: @m16px;
     line-height: @m23px;
 
     -moz-appearance: none;
@@ -35,6 +39,8 @@
   }
 
   .search__icon {
-    right: @m6px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: @m10px;
   }
 }

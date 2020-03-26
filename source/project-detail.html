@@ -154,138 +154,107 @@
       </nav>
     </div>
   </header>
-  <main>
-    <h1 class="visually-hidden">Наши проекты</h1>
-    <section class="slogan slogan-project">
+
+  <main class="main">
+    <section class="slogan slogan-project-detail">
+      <a class="slogan__link mobile-block container link" href="projects.html">
+        <svg class="slogan__icon-arrow slogan__icon-arrow--left icon-arrow-left" width="50" height="50" aria-hidden="true" role="presentation">
+          <use xlink:href="#icon-arrow-left"></use>
+        </svg>
+        Все проекты
+      </a>
+
       <div class="slogan__bg-img-wrap">
         <picture>
-          <source type="image/webp" media="(max-width: 750px)" srcset="img/slogan/3-m.webp">
-          <source media="(max-width: 750px)" srcset="img/slogan/3-m.jpg">
-          <source type="image/webp" srcset="img/slogan/3-d.webp">
-          <img class="slogan__bg-img" src="img/slogan/3-d.jpg" alt="">
+          <source type="image/webp" media="(max-width: 750px)" srcset="img/slogan/4-m.webp">
+          <source media="(max-width: 750px)" srcset="img/slogan/4-m.jpg">
+          <source type="image/webp" srcset="img/slogan/4-d.webp">
+          <img class="slogan__bg-img" src="img/slogan/4-d.jpg" alt="">
         </picture>
       </div>
       <div class="slogan__content-wrap">
-        <h2 class="slogan__title slogan__title--project container-outside">
-          <span class="slogan__title-item slogan__title-item--stroke">Ключевые</span>
-          <span class="slogan__title-item">Проекты</span>
-        </h2>
+
+        <div class="slogan__link-wrap desktop-block container">
+          <a class="slogan__link link" href="projects.html">
+            <svg class="slogan__icon-arrow slogan__icon-arrow--left icon-arrow-left" width="50" height="50" aria-hidden="true" role="presentation">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+            Все проекты
+          </a>
+        </div>
+
+        <h1 class="slogan__title slogan__title--project container-outside">
+          <span class="slogan__title-item slogan__title-item--stroke">Международные</span>  
+          <span class="slogan__title-item">Анти&shy;наркотические</span>
+          <span class="slogan__title-item slogan__title-item--stroke">Лагеря</span>
+        </h1>
       </div>
     </section>
 
-    <section class="projects container">
-      <h2 class="visually-hidden">Список проектов</h2>
-      <ul class="projects__list">
-        <li class="projects__item">
-          <a class="projects__link" href="project-detail.html">
-            <p class="projects__subtitle subtitle">
-              Наши проекты
-            </p>
-            <h3 class="projects__title">
-              Антинаркотический лагерь
-            </h3>
-            <div class="projects__btn-link link">Подробнее
-              <svg class="projects__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </div>
-            <div class="projects__img-wrap">
-              <picture>
-                <source type="image/webp" srcset="img/projects/1.webp">
-                <img class="projects__img" src="img/projects/1.jpg" alt="Антинаркотический лагерь">
-              </picture>
-            </div>
-          </a>
-        </li>
+    <article class="two-columns container">
+      <div class="two-columns__column-left">
+        <h2 class="two-columns__title">О проекте</h2>
+        <h3 class="two-columns__subtitle">Дополнительный текст, который необходимо выделить</h3>
+        <h4 class="two-columns__signature">Подпись</h4>
+      </div>
+      <div class="two-columns__column-right">
+        <p class="two-columns__desc">
+          С момента своего основания Ассоциация стремилась объединить как можно больше НКО в сфере реабилитации и профилактики алко- и наркозависимости. Площадка Национального антинаркотического союза объединила  более 90 НКО, что позволило построить конструктивный диалог с органами государственной власти, обратив внимание на успехи независимых реабилитационных центров. Члены НАС выступили сторонниками идеи обязательной сертификации реабилитационных центров.
+        </p>
+        <p class="two-columns__list-title">
+          Работа организации ведется в нескольких направлениях:
+        </p>
+        <ul class="two-columns__list">
+          <li class="two-columns__item">Сотрудничество с реабилитационными центрами с целью повышения стандартов качества их работы;</li>
+          <li class="two-columns__item">Профилактика наркомании и алкоголизма на территории Российской Федерации;</li>
+          <li class="two-columns__item">Развитие программ ресоциализации зависимых;</li>
+          <li class="two-columns__item">Участие в рабочих группах, разрабатывающих проекты по внесению изменений в   действующее Законодательство в сфере реабилитации зависимых;</li>
+          <li class="two-columns__item">Популяризация методов психосоциальной реабилитации (методы drug free), в основе которых полный отказ от заместительной терапии.</li>  
+        </ul>
+        <p class="two-columns__desc">
+          За годы работы Национальный антинаркотический союз превратился в  крупную некоммерческую общественную организацию, реализующую социально ориентированные проекты и развивающие программы профилактики.
+        </p>
+      </div>
+    </article>
 
-        <li class="projects__item">
-          <a class="projects__link" href="project-detail.html">
-            <p class="projects__subtitle subtitle">
-              Наши проекты
-            </p>
-            <h3 class="projects__title">
-              Горячая линия <span class="projects__title--block">8 800 700 50 50</span>
-            </h3>
-            <div class="projects__btn-link link">Подробнее
-              <svg class="projects__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
+    <section class="gallery-swiper container">
+      <div class="swiper-container gallery-swiper__container" id="gallery-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery-swiper__slide">
+            <div class="gallery-swiper__img-wrap">
+              <img class="gallery-swiper__img" src="img/swiper/gallery-swiper/1.jpg" alt="">
             </div>
-            <div class="projects__img-wrap">
-              <picture>
-                <source type="image/webp" srcset="img/projects/2.webp">
-                <img class="projects__img" src="img/projects/2.jpg" alt="Горячая линия 8 800 700 50 50">
-              </picture>
+          </div>
+          <div class="swiper-slide gallery-swiper__slide">
+            <div class="gallery-swiper__img-wrap">
+              <img class="gallery-swiper__img" src="img/swiper/gallery-swiper/1.jpg" alt="">
             </div>
-          </a>
-        </li>  
+          </div>
+          <div class="swiper-slide gallery-swiper__slide">
+            <div class="gallery-swiper__img-wrap">
+              <img class="gallery-swiper__img" src="img/swiper/gallery-swiper/1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-swiper__slide">
+            <div class="gallery-swiper__img-wrap">
+              <img class="gallery-swiper__img" src="img/swiper/gallery-swiper/1.jpg" alt="">
+            </div>
+          </div>
+        </div>
 
-        <li class="projects__item">
-          <a class="projects__link" href="project-detail.html">
-            <p class="projects__subtitle subtitle">
-              Наши проекты
-            </p>
-            <h3 class="projects__title">
-              Социальный лифт
-            </h3>
-            <div class="projects__btn-link link">Подробнее
-              <svg class="projects__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </div>
-            <div class="projects__img-wrap">
-              <picture>
-                <source type="image/webp" srcset="img/projects/3.webp">
-                <img class="projects__img" src="img/projects/3.jpg" alt="Социальный лифт">
-              </picture>
-            </div>
-          </a>
-        </li>
-
-        <li class="projects__item">
-          <a class="projects__link" href="project-detail.html">
-            <p class="projects__subtitle subtitle">
-              Наши проекты
-            </p>
-            <h3 class="projects__title">
-              Исследование метода Drug Free
-            </h3>
-            <div class="projects__btn-link link">Подробнее
-              <svg class="projects__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </div>
-            <div class="projects__img-wrap">
-              <picture>
-                <source type="image/webp" srcset="img/projects/4.webp">
-                <img class="projects__img" src="img/projects/4.jpg" alt="Исследование метода Drug Free">
-              </picture>
-            </div>
-          </a>
-        </li>
-
-        <li class="projects__item">
-          <a class="projects__link" href="project-detail.html">
-            <p class="projects__subtitle subtitle">
-              Наши проекты
-            </p>
-            <h3 class="projects__title">
-              Школа профилактики химической зависимости
-            </h3>
-            <div class="projects__btn-link link">Подробнее
-              <svg class="projects__icon-arrow icon-arrow-right" width="50" height="50" aria-hidden="true" role="presentation">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </div>
-            <div class="projects__img-wrap">
-              <picture>
-                <source type="image/webp" srcset="img/projects/5.webp">
-                <img class="projects__img" src="img/projects/5.jpg" alt="Школа профилактики химической зависимости">
-              </picture>
-            </div>
-          </a>
-        </li>
-      </ul>
+        <div class="swiper-arrows-wrap gallery-swiper__arrows-wrap">
+          <div class="swiper-button-next gallery-swiper__button-next">
+            <svg class="swiper-arrow-next gallery-swiper__arrow-next" width="50" height="50">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-prev gallery-swiper__button-prev">
+            <svg class="swiper-arrow-next gallery-swiper__arrow-prev" width="50" height="50">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 

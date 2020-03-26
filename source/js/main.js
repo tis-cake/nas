@@ -20,6 +20,20 @@ searchToggle.addEventListener('click', function(evt) {
   this.classList.toggle('active');
 })
 
+// работа с нулём в пагинации слайдера
+// индекс активного слайда >= 10 - скрыть "0", иначе если < 10 - показать
+function updateFraction(slider) {
+  
+  let sliderActiveIndex = slider.activeIndex + 1;
+  let sliderElement = slider.el;
+  let fractionActiveZero = sliderElement.querySelector('.swiper-pagination-current-zero');
+
+  if (sliderActiveIndex >= 10) {
+    fractionActiveZero.classList.add('hidden');
+  } else if (sliderActiveIndex < 10) {
+    fractionActiveZero.classList.remove('hidden');
+  }
+}
 
 // [index page]
 // главный слайдер
@@ -31,6 +45,9 @@ let mainSwiper = new Swiper('#main-swiper', {
     el: '.main-swiper__pagination',
     type: 'fraction',
     renderFraction: function (currentClass, totalClass) {
+
+      // если слайдов >= 10 - рендерим пагинацию без "0" в totalClass
+      //  иначе - рендерим с "0"
       if (mainSwiperArr.length >= 10) {
         return '<span class="swiper-pagination-current-zero">0</span>' + 
              '<span class="' + currentClass + '"></span>' +
@@ -52,6 +69,8 @@ let mainSwiper = new Swiper('#main-swiper', {
   },
 });
 
+// если слайдов >= 10, то при изменении слайда проверяем индекс активного слайда,
+//  далее - обновляем пагинацию при необходимости
 if (mainSwiperArr.length >= 10) {
   mainSwiper.on('slideChange', function () {
     updateFraction(this);
@@ -114,8 +133,6 @@ let reviewsSwiper = new Swiper('#reviews-swiper', {
     type: 'fraction',
     renderFraction: function (currentClass, totalClass) {
 
-      // если слайдов >= 10 - рендерим пагинацию без "0" в totalClass
-      //  иначе - рендерим с "0"
       if (reviewsSwiperArr.length >= 10) {
         return '<span class="swiper-pagination-current-zero">0</span>' + 
              '<span class="' + currentClass + '"></span>' +
@@ -147,24 +164,32 @@ let reviewsSwiper = new Swiper('#reviews-swiper', {
   },
 });
 
-// работа с нулём в пагинации
-//  на этот раз - функция запускается только если слайдов >= 10
 if (reviewsSwiperArr.length >= 10) {
   reviewsSwiper.on('slideChange', function () {
     updateFraction(this);
   });
 }
 
-// индекс активного слайда >= 10 - скрыть "0", иначе если < 10 - показать
-function updateFraction(slider) {
-  
-  let sliderActiveIndex = slider.activeIndex + 1;
-  let sliderElement = slider.el;
-  let fractionActiveZero = sliderElement.querySelector('.swiper-pagination-current-zero');
+// [project-detail page]
+// слайдер фото
+let gallerySwiper = new Swiper('#gallery-swiper', {
+  slidesPerView: 1,
+  autoHeight: true,
 
-  if (sliderActiveIndex >= 10) {
-    fractionActiveZero.classList.add('hidden');
-  } else if (sliderActiveIndex < 10) {
-    fractionActiveZero.classList.remove('hidden');
+  navigation: {
+    nextEl: '.gallery-swiper__button-next',
+    prevEl: '.gallery-swiper__button-prev',
+  },
+
+  breakpoints: {
+    950: {
+      slidesPerView: 2,
+      spaceBetween: 100
+    },
+
+    755: {
+      slidesPerView: 2,
+      spaceBetween: 50
+    }
   }
-}
+});

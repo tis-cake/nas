@@ -10,9 +10,11 @@
   &--mb-bigger {
     margin-bottom: 11.4rem;
   }
-
   &-project {
     margin-bottom: 15.5rem;
+  }
+  &-project-detail {
+    margin-bottom: 10.6rem;
   }
 }
 
@@ -65,7 +67,6 @@
   align-items: flex-start;
 
   min-height: 30rem;
-  margin-bottom: 3.5rem;
   font-weight: 800;
   font-size: 8.5rem;
   line-height: 10rem;
@@ -79,42 +80,52 @@
 }
 
 .slogan__title-item {
+  align-self: center;
   -webkit-text-stroke-width: 3px;
-  &--ml80 {
-    // margin-left: 80px;
+
+  &:first-child,
+  &:last-child {
+    color: transparent;
+    -webkit-text-stroke-color: #fff;
   }
-  &--ml175 {
-   // margin-left: 175px;
-  }
-  &--ml270 {
-    // margin-left: 270px;
-  }
-  &--ml420 {
-    // margin-left: 422px;
+
+  &:nth-child(2) {
+    color: #fff;
   }
 }
 
 .slogan-program {
+  .slogan__title {
+    margin-bottom: 3.5rem;
+  }
   .slogan__title-item{
     &:first-child {
-      margin-left: 42.2rem;
+      margin-left: 42rem;
+      // margin-left: 42.2rem;
     }
     &:nth-child(2) {
-      margin-left: 8rem;
+      margin-right: 25rem;
+      // margin-left: 8rem;
     }
     &:last-child {
-      margin-left: 27rem;
+      margin-right: 23rem;
+      // margin-left: 27rem;
     }
   }
 }
 
 .slogan-practice {
+  .slogan__title {
+    margin-top: 1.2rem;
+  }
   .slogan__title-item{
     &:first-child {
-      margin-left: 26.4rem;
+      margin-left: 8.5rem;
     }
     &:last-child {
-      margin-left: 17.5rem;
+      // align-self: flex-start;
+      // margin-left: 17.5rem;
+      margin-right: 55rem;
     }
   }
 }
@@ -125,10 +136,32 @@
   }
   .slogan__title-item{
     &:first-child {
-      margin-left: 40.5rem;
+      // margin-left: 40.5rem;
+      margin-right: 20rem;
     }
     &:last-child {
-      margin-left: 69.5rem;
+      margin-left: 30rem;
+      // margin-left: 69.5rem;
+    }
+  }
+}
+
+.slogan-project-detail {
+  .slogan__content-wrap {
+    padding-top: 4.3rem;
+  }
+  .slogan__title {
+    margin-top: 13rem;
+  }
+  .slogan__title-item{
+    &:first-child {
+      margin-right: 5rem;
+    }
+    &:nth-child(2) {
+      margin-right: 1.4rem;
+    }
+    &:last-child {
+      margin-right: 32rem;
     }
   }
 }
@@ -148,19 +181,24 @@
 
   .slogan-program,
   .slogan-practice,
-  .slogan-project {
+  .slogan-project,
+  .slogan-project-detail {
+    .slogan__title {
+      margin: 0;
+    }
     .slogan__title-item {
       &:first-child,
       &:nth-child(2),
       &:last-child {
-        margin-left: 0;
+        align-self: flex-start;
+        margin: 0;
       }
     }
   }
 
   .slogan__title-item {
     align-self: flex-start;
-    margin-left: 0;
+    margin: 0;
   }
 
 }
@@ -232,19 +270,35 @@
     }
   }
 
-  .slogan__title {
-    min-height: 0px;
-    margin-bottom: 0px;
-    font-size: @m40px;
-    line-height: @m59px;
-    letter-spacing: 0.05em;
-    &--big {
-      font-size: @m35px;
-      line-height: @m40px;
+  .slogan-project-detail {
+    .slogan__content-wrap {
+      padding-top: 54px;
+    }
+    .slogan__title-item{
+      &:first-child {
+        font-size: 35px;
+      }
     }
   }
 
+  .slogan__title {
+    min-height: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    &--big {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  .slogan__title-item {
+    -webkit-text-stroke-width: 1px;
+  }
+
   .slogan__link {
+    margin-bottom: 30px;
     font-size: 20px;
     color: #000;
     &.mobile-block {
@@ -256,6 +310,10 @@
     width: 42px;
     padding-left: 21px;
     fill: #000;
+
+    &--left {
+      padding-left: 0;
+    }
   }
 }
 
@@ -270,6 +328,9 @@
     }
     &-project {
       margin-bottom: @m85px;
+    }
+    &-project-detail {
+      margin-bottom: @m57px;
     }
   }
 
@@ -307,39 +368,40 @@
     }
   }
 
-  // .slogan-practice {
-  //   .slogan__bg-img-wrap,
-  //   .slogan__content-wrap {
-  //     height: @m267px;
-  //   }
-  //   .slogan__content-wrap {
-  //     margin-bottom: @m10px;
-  //     padding-top: @m82px;
-  //   }
-  //   .slogan__title {
-  //   line-height: @m59px;
-  //   }
-  // }
+  .slogan-project-detail {
+    .slogan__content-wrap {
+      padding-top: @m54px;
+    }
+    .slogan__title-item{
+      &:first-child {
+        font-size: @m35px;
+      }
+    }
+  }
 
-  // .slogan__title {
-  //   font-size: @m40px;
-  //   line-height: @m59px;
-  //   &--big {
-  //     font-size: @m35px;
-  //     line-height: @m40px;
-  //   }
-  // }
+  .slogan__title {
+    font-size: @m40px;
+    line-height: @m59px;
+    &--big {
+      font-size: @m35px;
+      line-height: @m40px;
+    }
+  }
 
   .slogan__title-item {
     -webkit-text-stroke-width: @m1px;
   }
 
   .slogan__link {
+    margin-bottom: @m30px;
     font-size: @m20px;
   }
 
   .slogan__icon-arrow {
     width: @m42px;
     padding-left: @m21px;
+    &--left {
+      padding-left: 0;
+    }
   }
 }

@@ -821,12 +821,16 @@ input[type="radio"].visually-hidden {
 .slogan--mb-bigger {
   margin-bottom: 11.4rem;
 }
+.slogan-project {
+  margin-bottom: 15.5rem;
+}
 .slogan__bg-img-wrap {
   position: absolute;
   z-index: -1;
   max-width: 1920px;
   width: 100%;
   height: 64.3rem;
+  background-color: #5b3a29;
 }
 .slogan__bg-img {
   width: 100%;
@@ -876,17 +880,29 @@ input[type="radio"].visually-hidden {
 .slogan__title-item {
   -webkit-text-stroke-width: 3px;
 }
-.slogan__title-item--ml80 {
-  margin-left: 80px;
+.slogan-program .slogan__title-item:first-child {
+  margin-left: 42.2rem;
 }
-.slogan__title-item--ml175 {
-  margin-left: 175px;
+.slogan-program .slogan__title-item:nth-child(2) {
+  margin-left: 8rem;
 }
-.slogan__title-item--ml270 {
-  margin-left: 270px;
+.slogan-program .slogan__title-item:last-child {
+  margin-left: 27rem;
 }
-.slogan__title-item--ml420 {
-  margin-left: 422px;
+.slogan-practice .slogan__title-item:first-child {
+  margin-left: 26.4rem;
+}
+.slogan-practice .slogan__title-item:last-child {
+  margin-left: 17.5rem;
+}
+.slogan-project .slogan__content-wrap {
+  padding-top: 21.1rem;
+}
+.slogan-project .slogan__title-item:first-child {
+  margin-left: 40.5rem;
+}
+.slogan-project .slogan__title-item:last-child {
+  margin-left: 69.5rem;
 }
 .slogan__link {
   font-size: 2.2rem;
@@ -898,13 +914,19 @@ input[type="radio"].visually-hidden {
   fill: #fff;
 }
 @media (max-width: 1230px) {
-  .slogan__title-item--end {
-    align-self: flex-start;
+  .slogan-program .slogan__title-item:first-child,
+  .slogan-practice .slogan__title-item:first-child,
+  .slogan-project .slogan__title-item:first-child,
+  .slogan-program .slogan__title-item:nth-child(2),
+  .slogan-practice .slogan__title-item:nth-child(2),
+  .slogan-project .slogan__title-item:nth-child(2),
+  .slogan-program .slogan__title-item:last-child,
+  .slogan-practice .slogan__title-item:last-child,
+  .slogan-project .slogan__title-item:last-child {
+    margin-left: 0;
   }
-  .slogan__title-item--ml80,
-  .slogan__title-item--ml175,
-  .slogan__title-item--ml270,
-  .slogan__title-item--ml420 {
+  .slogan__title-item {
+    align-self: flex-start;
     margin-left: 0;
   }
 }
@@ -948,16 +970,19 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
     padding-top: 45px;
   }
-  .slogan-second .slogan__bg-img-wrap,
-  .slogan-second .slogan__content-wrap {
+  .slogan-practice .slogan__bg-img-wrap,
+  .slogan-practice .slogan__content-wrap {
     height: 63.571vw;
   }
-  .slogan-second .slogan__content-wrap {
+  .slogan-practice .slogan__content-wrap {
     margin-bottom: 2.381vw;
     padding-top: 19.524vw;
   }
-  .slogan-second .slogan__title {
+  .slogan-practice .slogan__title {
     line-height: 14.048vw;
+  }
+  .slogan-project .slogan__content-wrap {
+    padding-top: 152px;
   }
   .slogan__title {
     min-height: 0px;
@@ -990,8 +1015,11 @@ input[type="radio"].visually-hidden {
   .slogan--mb-bigger {
     margin-bottom: 19.762vw;
   }
-  .slogan-second {
+  .slogan-practice {
     margin-bottom: 36.667vw;
+  }
+  .slogan-project {
+    margin-bottom: 20.238vw;
   }
   .slogan__intro-slogan {
     margin-bottom: 11.429vw;
@@ -1016,6 +1044,9 @@ input[type="radio"].visually-hidden {
     margin-bottom: 4.762vw;
     padding-top: 10.714vw;
   }
+  .slogan-project .slogan__content-wrap {
+    padding-top: 36.19vw;
+  }
   .slogan__title-item {
     -webkit-text-stroke-width: 0.238vw;
   }
@@ -1027,9 +1058,15 @@ input[type="radio"].visually-hidden {
     padding-left: 5vw;
   }
 }
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .projects__item {
   position: relative;
   margin-left: 0.8rem;
+  margin-bottom: 14.4rem;
   padding-left: 4rem;
 }
 .projects__item::before {
@@ -1050,11 +1087,15 @@ input[type="radio"].visually-hidden {
   width: 21.7rem;
 }
 .projects__title {
-  max-width: 42.5rem;
+  max-width: 52rem;
+  min-height: 10rem;
   margin-bottom: 0.3rem;
   font-weight: 700;
   font-size: 4.5rem;
   line-height: 5rem;
+}
+.projects__title--block {
+  display: block;
 }
 .projects__btn-link {
   margin-bottom: 3rem;
@@ -1067,6 +1108,11 @@ input[type="radio"].visually-hidden {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1782px) {
+  .projects__list {
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 750px) {
   .projects__item {
@@ -1104,6 +1150,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 420px) {
   .projects__item {
     margin-left: 1.905vw;
+    margin-bottom: 23.571vw;
     padding-left: 1.19vw;
   }
   .projects__item::before {
@@ -1122,6 +1169,7 @@ input[type="radio"].visually-hidden {
   }
   .projects__title {
     max-width: 76.19vw;
+    min-height: 0;
     margin-bottom: 2.381vw;
     font-size: 8.333vw;
     line-height: 9.524vw;
@@ -1201,6 +1249,11 @@ input[type="radio"].visually-hidden {
   width: 2.8rem;
   height: 0.3rem;
   background-color: #000;
+}
+@media (max-width: 1782px) {
+  .program__list {
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 750px) {
   .program__item {

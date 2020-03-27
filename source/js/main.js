@@ -193,3 +193,50 @@ let gallerySwiper = new Swiper('#gallery-swiper', {
     }
   }
 });
+
+// [about page]
+// слайдер команды
+let teamSwiper = new Swiper('#team-swiper-team', {
+  slidesPerView: 4,
+  spaceBetween: 67,
+
+  navigation: {
+    nextEl: '.team-swiper__button-next--team',
+    prevEl: '.team-swiper__button-prev--team',
+  },
+
+  // breakpoints: {
+  //   950: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 100
+  //   },
+
+  //   755: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 50
+  //   }
+  // }
+});
+
+// слайдер членов совета
+let memberSwiper = new Swiper('#team-swiper-member', {
+  slidesPerView: 4,
+  spaceBetween: 67,
+
+  navigation: {
+    nextEl: '.team-swiper__button-next--member',
+    prevEl: '.team-swiper__button-prev--member',
+  },
+
+  // breakpoints: {
+  //   950: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 100
+  //   },
+
+  //   755: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 50
+  //   }
+  // }
+});

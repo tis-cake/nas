@@ -1,5 +1,6 @@
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
+const anchors = document.querySelectorAll('a[href*="#"]'); // якоря
 
 // мобильное меню
 let mobileMenu = header.querySelector('.header__block-bottom');
@@ -19,6 +20,20 @@ let searchHeader = header.querySelector('.header__search');
 searchToggle.addEventListener('click', function(evt) {
   this.classList.toggle('active');
 })
+
+// работа с якорями
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    
+    const blockID = anchor.getAttribute('href').substr(1);
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+}
 
 // работа с нулём в пагинации слайдера
 // индекс активного слайда >= 10 - скрыть "0", иначе если < 10 - показать

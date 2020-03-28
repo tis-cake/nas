@@ -100,15 +100,17 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 1410px;
+  // max-width: 1410px;
+  width: 141rem;
   .margin-inline(@a);
-  .padding-inline(20px);
+  .padding-inline(2rem);
 }
 
 .container-outside {
-  max-width: 1510px;
+  // max-width: 1510px;
+  width: 151rem;
   .margin-inline(@a);
-  .padding-inline(20px);
+  .padding-inline(2rem);
 }
 
 .mobile-block {
@@ -193,6 +195,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: @tablet-width) {
   .container,
   .container-outside {
+    width: @a;
     .padding-inline(25px);
   }
 

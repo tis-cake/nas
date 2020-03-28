@@ -83,7 +83,6 @@
 
 .main-swiper__arrows-wrap {
   top: 9.5rem;
-  // right: 255px;
   right: 50%;
   transform: translateX(70.5rem);
 }
@@ -118,22 +117,21 @@
       content: '';
     }
   }
-}
-
-@media (max-width: 1540px) {
-  .main-swiper__img-block {
-    &::before {
-      content: '';
-    }
-  }
 
   .main-swiper__arrows-wrap {
     right: @a;
-    left: 0;
+    left: 9rem;
   }
 
   .main-swiper__pagination {
     transform: none;
+    left: 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-swiper__arrows-wrap,
+  .main-swiper__pagination {
     left: 0;
   }
 }

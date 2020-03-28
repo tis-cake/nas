@@ -1,19 +1,21 @@
 .progress {
+  margin-bottom: 14.3rem;
 }
 
 .progress__column-wrap {
-  .o;
   display: flex;
+  justify-content: space-between;
 }
 
 .progress__column-left {
+  max-width: 726px;
 }
 
 .progress__img-wrap {
   margin: 0;
-  width: 726px;
-  height: 726px;
-  .o;
+  margin-top: 2.6rem;
+  width: 72.6rem;
+  height: 72.6rem;
 }
 
 .progress__img {
@@ -21,33 +23,87 @@
 }
 
 .progress__column-right {
+  max-width: 660px;
 }
 
 .progress__title {
+  margin-bottom: 1.2rem;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 6.5rem;
 }
 
 .progress__desc {
+  margin-bottom: 4.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
-.progress__link-wrap {
+.progress__link-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 7.2rem;
+  padding-left: 2.4rem;
+}
+
+.progress__link-item {
+  margin-right: 6.9rem;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .progress__link {
 }
 
-.progress-sections__icon-arrow {
+.progress__icon-arrow {
 }
 
 .progress__list {
+  
 }
 
 .progress__item {
+  margin-bottom: 3.2rem;
 }
 
 .progress__chart-title {
+  position: relative;
+  margin-bottom: 0.7rem;
+  padding-left: 3.4rem;
+
+  font-weight: 700;
+  font-size: 2.5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    border-radius: 50%;
+  }
+
+  &--deep-blue::before {
+    background-color: #5466F6;
+  }
+  &--blue::before {
+    background-color: #62C4FA;
+  }
+  &--green::before {
+    background-color: #8DC662;
+  }
+  &--orange::before {
+    background-color: #F4B059;
+  }
+  &--red::before {
+    background-color: #EA6646;
+  }
 }
 
 .progress__chart-desc {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
 }

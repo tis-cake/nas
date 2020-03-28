@@ -92,7 +92,7 @@ let projectsSwiper = new Swiper('#projects-swiper', {
       spaceBetween: 100
     },
 
-    755: {
+    760: {
       slidesPerView: 2,
       spaceBetween: 50
     }
@@ -115,7 +115,7 @@ let twoArticlesSwiper = new Swiper('#two-articles-swiper', {
       spaceBetween: 100
     },
 
-    755: {
+    760: {
       slidesPerView: 2,
       spaceBetween: 50
     }
@@ -187,7 +187,7 @@ let gallerySwiper = new Swiper('#gallery-swiper', {
       spaceBetween: 100
     },
 
-    755: {
+    760: {
       slidesPerView: 2,
       spaceBetween: 50
     }
@@ -228,11 +228,15 @@ let memberSwiper = new Swiper('#team-swiper-member', {
     prevEl: '.team-swiper__button-prev--member',
   },
 
-  // breakpoints: {
+  breakpoints: {
+    // 1808: {
+    //   spaceBetween: 50,
+    // }
+
   //   950: {
   //     slidesPerView: 2,
   //     spaceBetween: 100
-  //   },
+    },
 
   //   755: {
   //     slidesPerView: 2,

@@ -1660,6 +1660,8 @@ input[type="radio"].visually-hidden {
   counter-reset: articleItem;
   width: 90rem;
   margin-left: 10.3rem;
+  overflow: hidden;
+  transition: height 500ms;
 }
 .chronicle__item {
   position: relative;
@@ -1684,7 +1686,8 @@ input[type="radio"].visually-hidden {
   align-self: center;
   margin-left: auto;
 }
-.chronicle__btn {
+.chronicle__btn,
+.chronicle__more-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1697,6 +1700,11 @@ input[type="radio"].visually-hidden {
 .chronicle__icon-arrow {
   width: 4rem;
   height: 4rem;
+  transform: rotate(-90deg);
+  transition: transform 0.7s;
+}
+.active .chronicle__icon-arrow {
+  transform: rotate(-90deg) scale(-1);
 }
 .chronicle__btn-more-wrap {
   display: flex;
@@ -1707,7 +1715,7 @@ input[type="radio"].visually-hidden {
   font-size: 1.8rem;
   cursor: pointer;
 }
-.chronicle__more {
+.chronicle__more-text {
   padding-left: 1.3rem;
 }
 .team {

@@ -212,31 +212,31 @@ let gallerySwiper = new Swiper('#gallery-swiper', {
 // [about page]
 // слайдер команды
 let teamSwiper = new Swiper('#team-swiper-team', {
-  slidesPerView: 4,
-  spaceBetween: 67,
+  slidesPerView: 2,
+  spaceBetween: 0,
 
   navigation: {
     nextEl: '.team-swiper__button-next--team',
     prevEl: '.team-swiper__button-prev--team',
   },
 
-  // breakpoints: {
+  breakpoints: {
   //   950: {
   //     slidesPerView: 2,
   //     spaceBetween: 100
   //   },
 
-  //   755: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 50
-  //   }
-  // }
+    755: {
+      slidesPerView: 4,
+      spaceBetween: 67
+    }
+  }
 });
 
 // слайдер членов совета
 let memberSwiper = new Swiper('#team-swiper-member', {
-  slidesPerView: 4,
-  spaceBetween: 67,
+  slidesPerView: 2,
+  spaceBetween: 0,
 
   navigation: {
     nextEl: '.team-swiper__button-next--member',
@@ -244,20 +244,16 @@ let memberSwiper = new Swiper('#team-swiper-member', {
   },
 
   breakpoints: {
-    // 1808: {
-    //   spaceBetween: 50,
-    // }
-
   //   950: {
   //     slidesPerView: 2,
   //     spaceBetween: 100
-    },
+  //   },
 
-  //   755: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 50
-  //   }
-  // }
+    755: {
+      slidesPerView: 4,
+      spaceBetween: 67
+    }
+  }
 });
 
 // slideUp/slideDown

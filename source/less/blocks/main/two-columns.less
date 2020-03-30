@@ -8,6 +8,18 @@
   &--mb-bigger {
     margin-bottom: 12.5rem;
   }
+  &--mt {
+    margin-top: 21.5rem;
+  }
+}
+
+.two-columns__main-title {
+  margin-bottom: 6.6rem;
+
+  font-weight: 800;
+  font-size: 8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .two-columns__column-left {
@@ -100,10 +112,24 @@
   margin-top: 9rem;
   width: 100%;
   height: 45.5rem;
+
+  &--img-top {
+    height: 33.1rem;
+    margin-top: 0;
+    margin-bottom: 9.6rem;
+  }
 }
 
 .two-columns__img {
   .img-cover;
+}
+
+.two-columns__article-title {
+  margin-bottom: 2.2rem;
+
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.4rem;
 }
 
 @media (max-width: @tablet-width) {
@@ -112,6 +138,27 @@
     &--mb-bigger {
       margin-bottom: 112px;
     }
+    &--mt {
+      margin-top: 60px;
+    }
+  }
+
+  .two-columns__main-title {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 6px;
+    
+    font-size: 40px;
+    line-height: 59px;
+    letter-spacing: normal;
+
+    &--stroke {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .two-columns__column-left {
+    margin-bottom: 38px;
   }
 
   .two-columns__title {
@@ -128,12 +175,16 @@
   }
 
   .two-columns__signature {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .two-columns__img-wrap {
     margin-top: 17px;
     height: 145px;
+    &--img-top {
+      height: 265px;
+      margin-bottom: 74px;
+    }
   }
 }
 
@@ -143,6 +194,19 @@
     &--mb-bigger {
       margin-bottom: @m112px;
     }
+    &--mt {
+      margin-top: @m60px;
+    }
+  }
+
+  .two-columns__main-title {
+    margin-bottom: @m6px;
+    font-size: @m40px;
+    line-height: @m59px;
+  }
+
+  .two-columns__column-left {
+    margin-bottom: @m38px;
   }
 
   .two-columns__title {
@@ -166,7 +230,7 @@
   }
 
   .two-columns__signature {
-    margin-bottom: @m40px;
+    // margin-bottom: @m40px;
     font-size: @m20px;
     line-height: @m29px;
   }
@@ -204,5 +268,16 @@
   .two-columns__img-wrap {
     margin-top: @m17px;
     height: @m145px;
+    &--img-top {
+      height: @m265px;
+      margin-bottom: @m74px;
+    }
+  }
+
+  .two-columns__article-title {
+    margin-bottom: @m22px;
+
+    font-size: @m30px;
+    line-height: @m44px;
   }
 }

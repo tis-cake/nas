@@ -54,6 +54,7 @@ function updateFraction(slider) {
 // главный слайдер
 let mainSwiperArr = document.querySelectorAll('.main-swiper__slide');
 let mainSwiper = new Swiper('#main-swiper', {
+  preloadImages: false,
   // effect: 'fade',
   // fadeEffect: { crossFade: true },
   pagination: {
@@ -95,6 +96,7 @@ if (mainSwiperArr.length >= 10) {
 // слайдер проектов
 let projectsSwiper = new Swiper('#projects-swiper', {
   slidesPerView: 1,
+  preloadImages: false,
 
   navigation: {
     nextEl: '.projects-swiper__button-next',
@@ -143,6 +145,7 @@ let reviewsSwiperArr = document.querySelectorAll('.reviews-swiper__slide');
 let reviewsSwiper = new Swiper('#reviews-swiper', {
   slidesPerView: 1,
   autoHeight: true,
+  preloadImages: false,
 
   pagination: {
     el: '.reviews-swiper__pagination',
@@ -191,6 +194,7 @@ if (reviewsSwiperArr.length >= 10) {
 let gallerySwiper = new Swiper('#gallery-swiper', {
   slidesPerView: 1,
   autoHeight: true,
+  preloadImages: false,
 
   navigation: {
     nextEl: '.gallery-swiper__button-next',
@@ -215,6 +219,7 @@ let gallerySwiper = new Swiper('#gallery-swiper', {
 let teamSwiper = new Swiper('#team-swiper-team', {
   slidesPerView: 2,
   spaceBetween: 0,
+  preloadImages: false,
 
   navigation: {
     nextEl: '.team-swiper__button-next--team',
@@ -238,6 +243,7 @@ let teamSwiper = new Swiper('#team-swiper-team', {
 let memberSwiper = new Swiper('#team-swiper-member', {
   slidesPerView: 2,
   spaceBetween: 0,
+  preloadImages: false,
 
   navigation: {
     nextEl: '.team-swiper__button-next--member',

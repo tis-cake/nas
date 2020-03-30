@@ -16,11 +16,15 @@
 }
 
 .two-columns__title {
+  max-width: 460px;
   margin-bottom: 3rem;
 
   font-weight: 700;
   font-size: 6.5rem;
   line-height: 7rem;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
 }
 
 .two-columns__subtitle {
@@ -111,6 +115,7 @@
   }
 
   .two-columns__title {
+    max-width: none;
     margin-bottom: 37px;
     font-size: 50px;
     line-height: 60px;
@@ -144,6 +149,8 @@
     margin-bottom: @m37px;
     font-size: @m50px;
     line-height: @m60px;
+
+    -webkit-text-stroke-width: @m1px;
   }
 
   .two-columns__subtitle {

@@ -2,7 +2,7 @@
   margin-bottom: 11.6rem;
 }
 
-.chronicle__title {
+.chronicle__main-title {
   margin-bottom: 1.7rem;
 
   font-weight: 700;
@@ -26,7 +26,8 @@
 }
 
 .chronicle__date {
-  width: 26rem;
+  // width: 26rem;
+  width: 34rem;
 
   font-weight: 800;
   font-size: 7rem;
@@ -37,14 +38,42 @@
   -webkit-text-stroke-color: #000;
 }
 
-.chronicle__list {
-  counter-reset: articleItem;
+.chronicle__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   width: 90rem;
-  margin-left: 10.3rem;
-  
+  margin-left: auto;
+  margin-right: 4.2rem;
+}
+
+.chronicle__title {
+  margin-bottom: 2.3rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+
+  transition: all 500ms;
+
+  &.active {
+    margin-bottom: 0;
+  }
+}
+
+.chronicle__hidden-wrap {
   overflow: hidden;
   transition: all 500ms;
+}
+
+.chronicle__desc {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.chronicle__list {
+  counter-reset: articleItem;  
 }
 
 .chronicle__item {
@@ -111,6 +140,10 @@
   height: 4rem;
   transform: rotate(-90deg);
   transition: transform 0.7s;
+
+  &--bottom {
+    transform: rotate(90deg);
+  }
 }
 
 .active {
@@ -141,7 +174,7 @@
     margin-bottom: 118px;
   }
 
-  .chronicle__title {
+  .chronicle__main-title {
     margin-bottom: 44px;
     font-size: 40px;
   }
@@ -154,18 +187,36 @@
   }
 
   .chronicle__date {
-    width: 230px;
+    // width: 230px;
+    width: 275px;
     font-size: 60px;
   }
 
-  .chronicle__list {
-    width: @a;
-    margin-top: 26px;
-    margin-left: 0;
+  .chronicle__main-content {
     order: 2;
+
+    width: @a;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .chronicle__title {
+    display: none;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .chronicle__hidden-wrap {
+    margin-top: 26px;
     &.active {
       margin-top: 0;
     }
+  }
+
+  .chronicle__desc {
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .chronicle__item {
@@ -195,12 +246,12 @@
   }
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: @mobile-width) {
   .chronicle {
     margin-bottom: @m118px;
   }
 
-  .chronicle__title {
+  .chronicle__main-title {
     margin-bottom: @m44px;
     font-size: @m40px;
 
@@ -219,13 +270,24 @@
   }
 
   .chronicle__date {
-    width: @m230px;
+    // width: @m230px;
+    width: @m275px;
     font-size: @m60px;
     -webkit-text-stroke-width: @m1px;
   }
 
-  .chronicle__list {
+  .chronicle__hidden-wrap {
     margin-top: @m26px;
+  }
+
+  .chronicle__title {
+    font-size: @m24px;
+    line-height: @m35px;
+  }
+
+  .chronicle__desc {
+    font-size: @m18px;
+    line-height: @m27px;
   }
 
   .chronicle__item {

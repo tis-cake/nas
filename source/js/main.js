@@ -118,6 +118,7 @@ let projectsSwiper = new Swiper('#projects-swiper', {
 let twoArticlesSwiper = new Swiper('#two-articles-swiper', {
   slidesPerView: 1,
   autoHeight: true,
+  preloadImages: false,
 
   navigation: {
     nextEl: '.two-articles-swiper__button-next',
@@ -261,21 +262,26 @@ let chronicleBtnArr = document.querySelectorAll('.chronicle__btn');
 for (let chronicleBtn of chronicleBtnArr) {
   chronicleBtn.addEventListener('click', function (evt) {
     let chronicleBlock = this.closest('.chronicle__block');
-    let chronicleList = chronicleBlock.querySelector('.chronicle__list');
+    let chronicleHiddenBlock = chronicleBlock.querySelector('.chronicle__hidden-wrap');
+
+    let chronicleTitleBlock = chronicleBlock.querySelector('.chronicle__title');
+    if (chronicleTitleBlock) {
+      chronicleTitleBlock.classList.toggle('active');
+    }
 
     // если список пуст - выйти из функции
-    if (chronicleList.children.length === 0) {
+    if (chronicleHiddenBlock.children.length === 0) {
       return;      
     }
 
     this.classList.toggle('active');
-    chronicleList.classList.toggle('active');
+    chronicleHiddenBlock.classList.toggle('active');
 
     // второй аргумент - время на исполнение setInterval
-    if (chronicleList.classList.contains('active')) {
-      slideUp(chronicleList, 15);
+    if (chronicleHiddenBlock.classList.contains('active')) {
+      slideUp(chronicleHiddenBlock, 15);
     } else {
-      slideDown(chronicleList, 15);
+      slideDown(chronicleHiddenBlock, 15);
     }
 
   });

@@ -1415,9 +1415,6 @@ input[type="radio"].visually-hidden {
   }
 }
 .two-columns {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 8.8rem;
 }
 .two-columns--mb-bigger {
@@ -1426,12 +1423,27 @@ input[type="radio"].visually-hidden {
 .two-columns--mt {
   margin-top: 21.5rem;
 }
+.two-columns--btn-back {
+  margin-top: 9.5rem;
+}
 .two-columns__main-title {
   margin-bottom: 6.6rem;
   font-weight: 800;
   font-size: 8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.two-columns__column-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.two-columns__column-center {
+  width: 107rem;
+}
+.two-columns__link-back {
+  margin-bottom: 7rem;
+  font-size: 2.2rem;
 }
 .two-columns__column-left {
   width: 56.9rem;
@@ -1526,12 +1538,13 @@ input[type="radio"].visually-hidden {
   .two-columns--mb-bigger {
     margin-bottom: 112px;
   }
-  .two-columns--mt {
+  .two-columns--mt,
+  .two-columns--btn-back {
     margin-top: 60px;
   }
   .two-columns__main-title {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-bottom: 6px;
     font-size: 40px;
     line-height: 59px;
@@ -1540,8 +1553,20 @@ input[type="radio"].visually-hidden {
   .two-columns__main-title--stroke {
     letter-spacing: 0.05em;
   }
+  .two-columns__column-left,
+  .two-columns__column-right,
+  .two-columns__column-center {
+    width: auto;
+  }
+  .two-columns__link-back {
+    margin-bottom: 20px;
+  }
   .two-columns__column-left {
     margin-bottom: 38px;
+  }
+  .two-columns__feedback {
+    order: 2;
+    margin-top: 159px;
   }
   .two-columns__title {
     max-width: none;
@@ -1573,8 +1598,13 @@ input[type="radio"].visually-hidden {
   .two-columns--mb-bigger {
     margin-bottom: 26.667vw;
   }
-  .two-columns--mt {
+  .two-columns--mt,
+  .two-columns--btn-back {
     margin-top: 14.286vw;
+  }
+  .two-columns__link-back {
+    margin-bottom: 4.762vw;
+    font-size: 5.238vw;
   }
   .two-columns__main-title {
     margin-bottom: 1.429vw;
@@ -1583,6 +1613,9 @@ input[type="radio"].visually-hidden {
   }
   .two-columns__column-left {
     margin-bottom: 9.048vw;
+  }
+  .two-columns__feedback {
+    margin-top: 37.857vw;
   }
   .two-columns__title {
     margin-bottom: 8.81vw;
@@ -1704,6 +1737,9 @@ input[type="radio"].visually-hidden {
   font-size: 8.5rem;
   line-height: 11rem;
   letter-spacing: 0.05em;
+}
+.about-info__title-item--ml90 {
+  margin-left: 91px;
 }
 .about-info__title-item:first-child {
   margin-bottom: 0.2rem;
@@ -2477,6 +2513,87 @@ input[type="radio"].visually-hidden {
   .useful-article__desc {
     font-size: 4.286vw;
     line-height: 6.429vw;
+  }
+}
+.feedback__title {
+  margin-top: 1.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: 5rem;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__label {
+  margin-bottom: 0.7rem;
+  font-size: 1.8rem;
+}
+.feedback__input {
+  width: 46.5rem;
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: 0.1rem solid #DEDEDE;
+}
+.feedback__input::-webkit-input-placeholder {
+  opacity: 1;
+}
+.feedback__input::-moz-placeholder {
+  opacity: 1;
+}
+.feedback__input:-ms-input-placeholder {
+  opacity: 1;
+}
+.feedback__input::-ms-input-placeholder {
+  opacity: 1;
+}
+.feedback__input::placeholder {
+  opacity: 1;
+}
+.feedback__submit {
+  margin-top: 4.9rem;
+  margin-left: 4.5rem;
+}
+.feedback__submit::before {
+  left: -4.7rem;
+}
+@media (max-width: 760px) {
+  .feedback__title {
+    margin-top: 0;
+    margin-bottom: 31px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .feedback__input {
+    width: 100%;
+  }
+  .feedback__submit {
+    margin-top: 28px;
+    margin-left: 49px;
+  }
+}
+@media (max-width: 420px) {
+  .feedback__title {
+    margin-bottom: 7.381vw;
+    font-size: 9.524vw;
+    line-height: 10.714vw;
+  }
+  .feedback__label {
+    margin-bottom: 1.667vw;
+    font-size: 4.286vw;
+  }
+  .feedback__input {
+    margin-bottom: 4.286vw;
+    font-size: 4.286vw;
+    border-bottom: 0.238vw solid #DEDEDE;
+  }
+  .feedback__submit {
+    margin-top: 6.667vw;
+    margin-left: 11.667vw;
+  }
+  .feedback__submit::before {
+    left: -11.19vw;
   }
 }
 /*swipers*/

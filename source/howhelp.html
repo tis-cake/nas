@@ -157,253 +157,89 @@
       </nav>
     </div>
   </header>
-
   <main class="main">
-    <section class="useful-articles container">
-      <p class="useful-articles__slogan">
-        Избавимся от наркотиков вместе!
-      </p>
-      <h2 class="useful-articles__title">
-        <span class="useful-articles__title-item">Полезные</span>
-        <span class="useful-articles__title-item stroke">материалы</span>
-      </h2>
-      <div class="useful-articles__wrap">
-        <div class="useful-articles__img-wrap">
+    <section class="about-info container">
+      <div class="about-info__wrap">
+        <ul class="about-info__list">
+          <li class="about-info__item">
+            <a class="about-info__link" href="#content1">Финансовая поддержка</a>
+          </li>
+          <li class="about-info__item">
+            <a class="about-info__link" href="#content2">Сотрудничество</a>
+          </li>
+          <li class="about-info__item">
+            <a class="about-info__link" href="#content3">Стать волонтером</a>
+          </li>
+          <li class="about-info__item">
+            <a class="about-info__link" href="#content4">Оставить заявку</a>
+          </li>
+        </ul>
+        
+        <h1 class="about-info__title">
+          <span class="about-info__title-item about-info__title-item--ml90">Как помочь?</span>
+          <span class="about-info__title-item stroke">Победим</span>
+          <span class="about-info__title-item stroke">Наркотики</span>
+          <span class="about-info__title-item stroke">Вместе!</span>
+        </h1>
+
+        <div class="about-info__img-wrap">
           <picture>
-            <source type="image/webp" srcset="img/useful-articles/1.webp">
-            <img class="useful-articles__img" src="img/useful-articles/1.jpg" alt="Полезные материалы">
+            <source type="image/webp" srcset="img/about-info/2.webp">
+            <img class="about-info__img" src="img/about-info/2.jpg" alt="Как помочь?">
           </picture>
-        </div>
-        <div class="useful-article__text-wrap">
-          <p class="useful-article__desc">Будьте в курсе последних событий</p>
-          <p class="useful-article__desc">В разделе размещены полезные материал и статьи. Мы хотим чтобы вы были осведомлены!</p>
         </div>
       </div>
     </section>
 
-    <article class="two-columns container">
+    <article class="two-columns two-columns--mb-bigger container">
       <div class="two-columns__column-wrap">
-        <div class="two-columns__column-left">
-          <h2 class="two-columns__title">Заголовок текста</h2>
-          <h3 class="two-columns__subtitle">Дополнительный текст, который необходимо выделить</h3>
-          <h4 class="two-columns__signature">Подпись</h4>
+        <div class="two-columns__column-left two-columns__feedback feedback">
+          <h2 class="feedback__title" id="content4">Заявка на волонтерство</h2>
+          <form class="feedback__form" method="post" action="/">
+            <label class="feedback__label" for="name-field">ФИО</label>
+            <input class="feedback__input" type="text" name="NAME" id="name-field" placeholder="Осипова Анна" required>
+
+            <label class="feedback__label" for="mail-field">E-mail</label>
+            <input class="feedback__input" type="email" name="EMAIL" id="mail-field" placeholder="mail@example.com" required>
+
+            <label class="feedback__label" for="tel-field">Телефон</label>
+            <input class="feedback__input" type="tel" name="TEL" id="tel-field" placeholder="" required>
+
+            <label class="feedback__label" for="city-field">Город</label>
+            <input class="feedback__input" type="text" name="CITY" id="city-field" required>
+
+            <label class="feedback__label" for="about-field">Несколько слов от вас</label>
+            <input class="feedback__input" type="textarea" name="ABOUT" id="about-field" required>
+
+            <button class="feedback__submit link link--circle">
+              Отправить
+              <svg class="feedback__icon-arrow icon-arrow icon-arrow--right" width="50" height="50" aria-hidden="true" role="presentation">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </form>
         </div>
         <div class="two-columns__column-right">
+          <h2 class="two-columns__article-title" id="content1">Финансовая поддержка программ</h2>
           <div class="two-columns__desc">
-            <p>С момента своего основания Ассоциация стремилась объединить как можно больше НКО в сфере реабилитации и профилактики алко- и наркозависимости. Площадка Национального антинаркотического союза объединила  более 90 НКО, что позволило построить конструктивный диалог с органами государственной власти, обратив внимание на успехи независимых реабилитационных центров. Члены НАС выступили сторонниками идеи обязательной сертификации реабилитационных центров.</p>
+            <p>Деятельность Национального Антинаркотического Союза развивается во многом благодаря поддержке спонсоров и меценатов. Благотворительные проекты НАС  охватывают как помощь наркозависимым и их семьям, оплату реабилитации, так и развитие профилактических и образовательных программ. Если Вы разделяете наши цели и хотите оказать финансовую поддержку, свяжитесь с нами и мы расскажем, как вы можете помочь.</p>
           </div>
-          <p class="two-columns__list-title">
-            Работа организации ведется в нескольких направлениях:
-          </p>
-          <ul class="two-columns__list">
-            <li class="two-columns__item">Сотрудничество с реабилитационными центрами с целью повышения стандартов качества их работы;</li>
-            <li class="two-columns__item">Профилактика наркомании и алкоголизма на территории Российской Федерации;</li>
-            <li class="two-columns__item">Развитие программ ресоциализации зависимых;</li>
-            <li class="two-columns__item">Участие в рабочих группах, разрабатывающих проекты по внесению изменений в  действующее Законодательство в сфере реабилитации зависимых;</li>
-            <li class="two-columns__item">Популяризация методов психосоциальной реабилитации (методы drug free), в основе которых полный отказ от заместительной терапии.</li>  
-          </ul>
+          <h2 class="two-columns__article-title" id="content2">Сотрудничество</h2>
+          <div class="two-columns__desc">
+            <p>Внести свой вклад в антинаркотическое движение может каждый.  За каждым нашим проектом  стоит чья-либо инициатива. Из сотрудничества с бизнесом  мы  множество раз выстраивали программы по ресоциализации наркозависмых, продумывали варианты эффективного трудоустройства для выпускников реабилитационных программ, находили способы провести спортивные программы и международные лагеря.</p>
+          </div>
+          <div class="two-columns__desc">
+            <p>Сотрудничество с образовательными учреждениями помогает нам эффективно заниматься первичной профилактикой.</p>
+            <p>Коллаборации с представителями творческой среды помогает нам проводить масштабные антинаркотические мероприятия, создавать профилактические медиа-проекты.</p>
+          </div>
+          <h2 class="two-columns__article-title" id="content3">Станьте волонтером!</h2>
           <div class="two-columns__desc">
             <p>За годы работы Национальный антинаркотический союз превратился в  крупную некоммерческую общественную организацию, реализующую социально ориентированные проекты и развивающие программы профилактики.</p>
           </div>
         </div>
       </div>
     </article>
-
-    <section class="two-articles-swiper container">
-      <div class="two-articles-swiper__main-title-wrap">
-        <h2 class="two-articles-swiper__main-title">полезные
-        <span class="two-articles-swiper__main-title--stroke stroke">статьи</span>
-         </h2>
-      </div>
-
-      <div class="swiper-container two-articles-swiper__container" id="two-articles-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide two-articles-swiper__slide">
-            <a class="two-articles-swiper__item" href="article-detail.html">
-              <h3 class="two-articles-swiper__title">Проведения собрания</h3>
-              <div class="two-articles-swiper__text-wrap">
-                <p class="two-articles-swiper__desc">О проекте НАС, лечение и социализация наркозависимых.</p>
-                <p class="two-articles-swiper__desc">Проект для  лечение и социализация наркозависимых.</p>
-              </div>
-              <div class="two-articles-swiper__img-wrap">
-                <picture>
-                  <source type="image/webp" srcset="img/swiper/two-articles-swiper/1.webp">
-                  <img src="img/swiper/two-articles-swiper/1.jpg" alt="" class="two-articles-swiper__img">
-                </picture>
-              </div>
-              <time class="two-articles-swiper__datetime" datetime="2020-01-25">25 января</time>
-            </a>
-          </div>
-
-          <div class="swiper-slide two-articles-swiper__slide">
-            <a class="two-articles-swiper__item" href="article-detail.html">
-              <h3 class="two-articles-swiper__title">Национальный антинаркотический союз на Генеральной Ассамблее...</h3>
-              <div class="two-articles-swiper__text-wrap">
-                <p class="two-articles-swiper__desc">
-                  В Нью-Йорке начала свою работу 74-я сессия Генеральной Ассамблеи ООН. В ней примут участие представители 193 стран мира. Здесь ожидаются общеполитические прения высокого уровня. На трибуну взойдут лидеры более ста государств. Российскую делегацию возглавит министр иностранных дел Сергей Лавров.
-                </p>
-                <p class="two-articles-swiper__desc">
-                  Cостав делегации от Российской Федерации приглашены представители Национального антинаркотического союза (НАС) в лице председателя правления ...
-                </p>
-              </div>
-              <time class="two-articles-swiper__datetime" datetime="2020-01-25">25 января</time>
-            </a>
-          </div>
-
-          <div class="swiper-slide two-articles-swiper__slide">
-            <a class="two-articles-swiper__item" href="article-detail.html">
-              <h3 class="two-articles-swiper__title">Проведения собрания</h3>
-              <div class="two-articles-swiper__text-wrap">
-                <p class="two-articles-swiper__desc">О проекте НАС, лечение и социализация наркозависимых.</p>
-                <p class="two-articles-swiper__desc">Проект для  лечение и социализация наркозависимых.</p>
-              </div>
-              <div class="two-articles-swiper__img-wrap">
-                <picture>
-                  <source type="image/webp" srcset="img/swiper/two-articles-swiper/1.webp">
-                  <img src="img/swiper/two-articles-swiper/1.jpg" alt="" class="two-articles-swiper__img">
-                </picture>
-              </div>
-              <time class="two-articles-swiper__datetime" datetime="2020-01-25">25 января</time>
-            </a>
-          </div>
-
-          <div class="swiper-slide two-articles-swiper__slide">
-            <a class="two-articles-swiper__item" href="article-detail.html">
-              <h3 class="two-articles-swiper__title">Национальный антинаркотический союз на Генеральной Ассамблее...</h3>
-              <div class="two-articles-swiper__text-wrap">
-                <p class="two-articles-swiper__desc">
-                  В Нью-Йорке начала свою работу 74-я сессия Генеральной Ассамблеи ООН. В ней примут участие представители 193 стран мира. Здесь ожидаются общеполитические прения высокого уровня. На трибуну взойдут лидеры более ста государств. Российскую делегацию возглавит министр иностранных дел Сергей Лавров.
-                </p>
-                <p class="two-articles-swiper__desc">
-                  Cостав делегации от Российской Федерации приглашены представители Национального антинаркотического союза (НАС) в лице председателя правления ...
-                </p>
-              </div>
-              <time class="two-articles-swiper__datetime" datetime="2020-01-25">25 января</time>
-            </a>
-          </div>
-        </div>
-
-        <div class="swiper-arrows-wrap two-articles-swiper__arrows-wrap">
-          <div class="swiper-button-next two-articles-swiper__button-next">
-            <svg class="swiper-arrow-next two-articles-swiper__arrow-next" width="50" height="50">
-              <use xlink:href="#icon-arrow-right"></use>
-            </svg>
-          </div>
-          <div class="swiper-button-prev two-articles-swiper__button-prev">
-            <svg class="swiper-arrow-next two-articles-swiper__arrow-prev" width="50" height="50">
-              <use xlink:href="#icon-arrow-left"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="chronicle container">
-      <h2 class="chronicle__main-title">Дополнительные материалы</h2>
-      <div class="chronicle__block">
-        <h3 class="chronicle__date">
-          <time datetime="2020-02-01">01.02.20</time>
-        </h3>
-        <div class="chronicle__main-content">
-          <h4 class="chronicle__title">Работа организации ведется в нескольких направлениях</h4>
-          <div class="chronicle__hidden-wrap">
-            <p class="chronicle__desc">
-              С момента своего основания Ассоциация стремилась объединить как можно больше НКО в сфере реабилитации и профилактики алко- и наркозависимости. Площадка Национального антинаркотического союза объединила  более 90 НКО, что позволило построить конструктивный диалог с органами государственной власти, обратив внимание на успехи независимых реабилитационных центров. Члены НАС выступили сторонниками идеи обязательной сертификации реабилитационных центров.
-            </p>
-            <ul class="chronicle__list">
-              <li class="chronicle__item">Сотрудничество с реабилитационными центрами с целью повышения стандартов качества их работы;</li>
-              <li class="chronicle__item">Профилактика наркомании и алкоголизма на территории Российской Федерации;</li>
-              <li class="chronicle__item">Развитие программ ресоциализации зависимых;</li>
-              <li class="chronicle__item">Участие в рабочих группах, разрабатывающих проекты по внесению изменений в  действующее Законодательство в сфере реабилитации зависимых;</li>
-              <li class="chronicle__item">Популяризация методов психосоциальной реабилитации (методы drug free), в основе которых полный отказ от заместительной терапии.</li>
-            </ul>
-            <p class="chronicle__desc">
-              За годы работы Национальный антинаркотический союз превратился в  крупную некоммерческую общественную организацию, реализующую социально ориентированные проекты и развивающие программы профилактики.
-            </p>
-          </div>
-        </div>
-        <div class="chronicle__btn-wrap">
-          <button class="chronicle__btn" id="button">
-            <svg class="chronicle__icon-arrow icon-arrow" width="50" height="50">
-              <use xlink:href="#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="chronicle__block">
-        <h3 class="chronicle__date">
-          <time datetime="2020-02-01">01.02.20</time>
-        </h3>
-        <div class="chronicle__main-content">
-          <h4 class="chronicle__title">Работа организации ведется в нескольких направлениях</h4>
-          <div class="chronicle__hidden-wrap">
-            <p class="chronicle__desc">
-              С момента своего основания Ассоциация стремилась объединить как можно больше НКО в сфере реабилитации и профилактики алко- и наркозависимости. Площадка Национального антинаркотического союза объединила  более 90 НКО, что позволило построить конструктивный диалог с органами государственной власти, обратив внимание на успехи независимых реабилитационных центров. Члены НАС выступили сторонниками идеи обязательной сертификации реабилитационных центров.
-            </p>
-            <ul class="chronicle__list">
-              <li class="chronicle__item">Сотрудничество с реабилитационными центрами с целью повышения стандартов качества их работы;</li>
-              <li class="chronicle__item">Профилактика наркомании и алкоголизма на территории Российской Федерации;</li>
-              <li class="chronicle__item">Развитие программ ресоциализации зависимых;</li>
-              <li class="chronicle__item">Участие в рабочих группах, разрабатывающих проекты по внесению изменений в  действующее Законодательство в сфере реабилитации зависимых;</li>
-              <li class="chronicle__item">Популяризация методов психосоциальной реабилитации (методы drug free), в основе которых полный отказ от заместительной терапии.</li>
-            </ul>
-            <p class="chronicle__desc">
-              За годы работы Национальный антинаркотический союз превратился в  крупную некоммерческую общественную организацию, реализующую социально ориентированные проекты и развивающие программы профилактики.
-            </p>
-          </div>
-        </div>
-        <div class="chronicle__btn-wrap">
-          <button class="chronicle__btn" id="button">
-            <svg class="chronicle__icon-arrow icon-arrow" width="50" height="50">
-              <use xlink:href="#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="chronicle__block">
-        <h3 class="chronicle__date">
-          <time datetime="2020-02-01">01.02.20</time>
-        </h3>
-        <div class="chronicle__main-content">
-          <h4 class="chronicle__title">Работа организации ведется в нескольких направлениях</h4>
-          <div class="chronicle__hidden-wrap">
-            <p class="chronicle__desc">
-              С момента своего основания Ассоциация стремилась объединить как можно больше НКО в сфере реабилитации и профилактики алко- и наркозависимости. Площадка Национального антинаркотического союза объединила  более 90 НКО, что позволило построить конструктивный диалог с органами государственной власти, обратив внимание на успехи независимых реабилитационных центров. Члены НАС выступили сторонниками идеи обязательной сертификации реабилитационных центров.
-            </p>
-            <ul class="chronicle__list">
-              <li class="chronicle__item">Сотрудничество с реабилитационными центрами с целью повышения стандартов качества их работы;</li>
-              <li class="chronicle__item">Профилактика наркомании и алкоголизма на территории Российской Федерации;</li>
-              <li class="chronicle__item">Развитие программ ресоциализации зависимых;</li>
-              <li class="chronicle__item">Участие в рабочих группах, разрабатывающих проекты по внесению изменений в  действующее Законодательство в сфере реабилитации зависимых;</li>
-              <li class="chronicle__item">Популяризация методов психосоциальной реабилитации (методы drug free), в основе которых полный отказ от заместительной терапии.</li>
-            </ul>
-            <p class="chronicle__desc">
-              За годы работы Национальный антинаркотический союз превратился в  крупную некоммерческую общественную организацию, реализующую социально ориентированные проекты и развивающие программы профилактики.
-            </p>
-          </div>
-        </div>
-        <div class="chronicle__btn-wrap">
-          <button class="chronicle__btn" id="button">
-            <svg class="chronicle__icon-arrow icon-arrow" width="50" height="50">
-              <use xlink:href="#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="chronicle__btn-more-wrap">
-        <button class="chronicle__more-btn">
-          <svg class="chronicle__icon-arrow chronicle__icon-arrow--bottom icon-arrow" width="50" height="50">
-            <use xlink:href="#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <p class="chronicle__more-text">Загрузить еще</p>
-      </div>
-    </section>
   </main>
-
   <footer class="footer">
     <div class="container">
       <div class="footer__column-wrap">

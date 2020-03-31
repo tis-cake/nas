@@ -493,6 +493,9 @@ input[type="radio"].visually-hidden {
 .social-links__item:first-child {
   margin-left: 0;
 }
+.social-links__link {
+  position: relative;
+}
 .social-links__icon {
   width: 2.9rem;
   height: 2.9rem;
@@ -512,8 +515,14 @@ input[type="radio"].visually-hidden {
 .icon-facebook:hover {
   fill: #3A5898;
 }
-.icon-instagram:hover {
-  fill: url(#icon-instagram-color);
+.icon-instagram--gradient {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  opacity: 0;
+}
+.icon-instagram--gradient:hover {
+  opacity: 1;
 }
 @media (max-width: 420px) {
   .social-links__item {

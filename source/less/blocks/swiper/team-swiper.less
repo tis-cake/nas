@@ -58,3 +58,28 @@
     height: 40px;
   }
 }
+
+@media (max-width: @mobile-width) {
+  .team-swiper__title {
+    z-index: 0;
+    top: 0;
+  }
+
+  .team-swiper__container {
+    padding-top: @m75px;
+  }
+
+  .team-swiper__arrows-wrap {
+    right: auto;
+    left: 0;
+    width: @m110px;
+  }
+  
+  .team-swiper__button-next,
+  .team-swiper__button-prev,
+  .team-swiper__arrow-next,
+  .team-swiper__arrow-prev {
+    width: @m40px;
+    height: @m40px;
+  }
+}

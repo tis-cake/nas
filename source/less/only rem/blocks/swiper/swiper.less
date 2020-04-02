@@ -1,0 +1,77 @@
+.swiper-arrows-wrap {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 13.8rem;
+  height: 6rem;
+}
+
+.swiper-arrows-text-wrap {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 11.5rem;
+  }
+  .swiper-arrow-next {
+    margin-left: 1.5rem;
+  }
+  .swiper-arrow-prev {
+    margin-right: 1.5rem;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 5rem;
+  height: 5rem;
+
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 0;
+}
+
+.swiper-icon-arrow {
+  width: 5rem;
+  height: 5rem;
+}
+
+.hidden.swiper-pagination-current-zero {
+  display: none;
+}
+
+@media (max-width: @mobile-width) {
+  .swiper-arrows-wrap {
+    width: 13.8rem;
+    height: 6rem;
+  }
+
+  .swiper-arrows-text-wrap {
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 11.5rem;
+    }
+    .swiper-arrow-next {
+      margin-left: 1.5rem;
+    }
+    .swiper-arrow-prev {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.8rem;
+  }
+
+  .swiper-icon-arrow {
+    width: 5rem;
+    height: 5rem;
+  }
+}

@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
   .container,
   .container-outside {
     width: @a;
-    .padding-inline(2.5rem);
+    .padding-inline(25px);
   }
 
   .desktop-block {
@@ -209,73 +209,73 @@ input[type="radio"].visually-hidden {
   }
 
   .subtitle {
-    font-size: 1.8rem;
+    font-size: 18px;
     &::after {
-      bottom: 0.6rem;
-      height: 0.2rem;
-      border-radius: 0.2rem;
+      bottom: 6px;
+      height: 2px;
+      border-radius: 2px;
     }
   }
 
   .link {
     &--circle {
       &::before {
-        top: -1.7rem;
-        left: -3rem;
+        top: -17px;
+        left: -30px;
         
-        width: 7rem;
-        height: 7rem;
-        border: 0.3rem solid #fff;
+        width: 70px;
+        height: 70px;
+        border: 3px solid #fff;
         border-radius: 50%;
       }
     }
   }
 }
 
-// @media (max-width: @mobile-width) {
-//   body {
-//     font-size: @m16px;
-//   }
+@media (max-width: @mobile-width) {
+  body {
+    font-size: @m16px;
+  }
 
-//   .container,
-//   .container-outside {
-//     .padding-inline(@m25px);
-//   }
+  .container,
+  .container-outside {
+    .padding-inline(@m25px);
+  }
 
-//   .subtitle {
-//     font-size: @m18px;
-//     &::after {
-//       bottom: @m6px;
-//       height: @m2px;
-//     }
-//   }
+  .subtitle {
+    font-size: @m18px;
+    &::after {
+      bottom: @m6px;
+      height: @m2px;
+    }
+  }
 
-//   .stroke {
-//     -webkit-text-stroke-width: @m1px;
-//   }
+  .stroke {
+    -webkit-text-stroke-width: @m1px;
+  }
 
-//   .link {
-//     font-size: @m18px;
-//     &--circle {
-//       &::before {
-//         top: -@m17px;
-//         left: -@m30px;
+  .link {
+    font-size: @m18px;
+    &--circle {
+      &::before {
+        top: -@m17px;
+        left: -@m30px;
         
-//         width: @m70px;
-//         height: @m70px;
-//         border: @m3px solid #fff;
-//       }
-//     }
-//   }
+        width: @m70px;
+        height: @m70px;
+        border: @m3px solid #fff;
+      }
+    }
+  }
 
-//   .icon-arrow {
-//     width: @m50px;
-//     height: @m50px;
-//     &--right {
-//       padding-left: @m11px;
-//     }
-//     &--left {
-//       padding-right: @m11px;
-//     }
-//   }
-// }
+  .icon-arrow {
+    width: @m50px;
+    height: @m50px;
+    &--right {
+      padding-left: @m11px;
+    }
+    &--left {
+      padding-right: @m11px;
+    }
+  }
+}

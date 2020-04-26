@@ -206,19 +206,6 @@
 @media (max-width: @tablet-width) {
   .slogan {
     min-height: 0;
-    margin-bottom: 14.4rem;
-    &--mb-bigger {
-      margin-bottom: 8.3rem;
-    }
-    &-practice {
-      margin-bottom: 15.4rem;
-    }
-    &-project {
-      margin-bottom: 8.5rem;
-    }
-    &-project-detail {
-      margin-bottom: 5.7rem;
-    }
   }
 
   .slogan__intro-slogan,
@@ -228,25 +215,25 @@
 
   .slogan__intro-slogan {
     position: relative;
-    margin-bottom: 4.8rem;
-    font-size: 2.0rem;
-    line-height: 2.9rem;
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 29px;
     &::before {
       position: absolute;
       content: '';
-      left: 0.2rem;
-      bottom: -2.5rem;
+      left: 2px;
+      bottom: -25px;
 
-      width: 5.7rem;
-      height: 0.2rem;
+      width: 57px;
+      height: 2px;
       background-color: #000;
     }
   }
 
   .slogan__subtitle {
-    margin-bottom: 2.8rem;
+    margin-bottom: 28px;
     font-weight: normal;
-    line-height: 2.7rem;
+    line-height: 27px;
     &::after {
       content: none;
     }
@@ -254,65 +241,65 @@
 
   .slogan__bg-img-wrap {
     width: 100%;
-    height: 42.5rem;
+    height: @m425px;
   }
 
   .slogan__content-wrap {
-    height: 42.5rem;
-    margin-bottom: 2rem;
-    padding-top: 4.5rem;
+    height: @m425px;
+    margin-bottom: 20px;
+    padding-top: 45px;
   }
 
   .slogan-practice {
     .slogan__bg-img-wrap,
     .slogan__content-wrap {
-      height: 26.7rem;
+      height: @m267px;
     }
     .slogan__content-wrap {
-      margin-bottom: 1rem;
-      padding-top: 8.2rem;
+      margin-bottom: @m10px;
+      padding-top: @m82px;
     }
     .slogan__title {
-      line-height: 5.9rem;
+      line-height: @m59px;
     }
   }
 
   .slogan-project {
     .slogan__content-wrap {
-      padding-top: 15.2rem;
+      padding-top: 152px;
     }
   }
 
   .slogan-project-detail {
     .slogan__content-wrap {
-      padding-top: 5.4rem;
+      padding-top: 54px;
     }
     .slogan__title-item{
       &:first-child {
-        font-size: 3.5rem;
+        font-size: 35px;
       }
     }
   }
 
   .slogan__title {
-    min-height: 0;
-    margin-bottom: 0;
-    font-size: 4rem;
-    line-height: 5.9rem;
+    min-height: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 59px;
     letter-spacing: 0.05em;
     &--big {
-      font-size: 3.5rem;
-      line-height: 4rem;
+      font-size: 35px;
+      line-height: 40px;
     }
   }
 
   .slogan__title-item {
-    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-width: 1px;
   }
 
   .slogan__link {
-    margin-bottom: 3rem;
-    font-size: 2rem;
+    margin-bottom: 30px;
+    font-size: 20px;
     color: #000;
     &.mobile-block {
       display: inline-flex;
@@ -320,8 +307,8 @@
   }
 
   .slogan__icon-arrow {
-    width: 4.2rem;
-    padding-left: 2.1rem;
+    width: 42px;
+    padding-left: 21px;
     fill: #000;
 
     &--left {
@@ -330,91 +317,91 @@
   }
 }
 
-// @media (max-width: @mobile-width) {
-//   .slogan {
-//     margin-bottom: @m144px;
-//     &--mb-bigger {
-//       margin-bottom: @m83px;
-//     }
-//     &-practice {
-//       margin-bottom: @m154px;
-//     }
-//     &-project {
-//       margin-bottom: @m85px;
-//     }
-//     &-project-detail {
-//       margin-bottom: @m57px;
-//     }
-//   }
+@media (max-width: @mobile-width) {
+  .slogan {
+    margin-bottom: @m144px;
+    &--mb-bigger {
+      margin-bottom: @m83px;
+    }
+    &-practice {
+      margin-bottom: @m154px;
+    }
+    &-project {
+      margin-bottom: @m85px;
+    }
+    &-project-detail {
+      margin-bottom: @m57px;
+    }
+  }
 
-//   .slogan__intro-slogan {
-//     margin-bottom: @m48px;
-//     font-size: @m20px;
-//     line-height: @m29px;
-//     &::before {
-//       left: @m2px;
-//       bottom: -@m25px;
+  .slogan__intro-slogan {
+    margin-bottom: @m48px;
+    font-size: @m20px;
+    line-height: @m29px;
+    &::before {
+      left: @m2px;
+      bottom: -@m25px;
 
-//       width: @m57px;
-//       height: @m2px;
-//     }
-//   }
+      width: @m57px;
+      height: @m2px;
+    }
+  }
 
-//   .slogan__subtitle {
-//     margin-bottom: @m28px;
-//     line-height: @m27px;
-//   }
+  .slogan__subtitle {
+    margin-bottom: @m28px;
+    line-height: @m27px;
+  }
 
-//   .slogan__bg-img-wrap {
-//     height: @m425px;
-//   }
+  .slogan__bg-img-wrap {
+    height: @m425px;
+  }
 
-//   .slogan__content-wrap {
-//     height: @m425px;
-//     margin-bottom: @m20px;
-//     padding-top: @m45px;
-//   }
+  .slogan__content-wrap {
+    height: @m425px;
+    margin-bottom: @m20px;
+    padding-top: @m45px;
+  }
 
-//   .slogan-project {
-//     .slogan__content-wrap {
-//       padding-top: @m152px;
-//     }
-//   }
+  .slogan-project {
+    .slogan__content-wrap {
+      padding-top: @m152px;
+    }
+  }
 
-//   .slogan-project-detail {
-//     .slogan__content-wrap {
-//       padding-top: @m54px;
-//     }
-//     .slogan__title-item{
-//       &:first-child {
-//         font-size: @m35px;
-//       }
-//     }
-//   }
+  .slogan-project-detail {
+    .slogan__content-wrap {
+      padding-top: @m54px;
+    }
+    .slogan__title-item{
+      &:first-child {
+        font-size: @m35px;
+      }
+    }
+  }
 
-//   .slogan__title {
-//     font-size: @m40px;
-//     line-height: @m59px;
-//     &--big {
-//       font-size: @m35px;
-//       line-height: @m40px;
-//     }
-//   }
+  .slogan__title {
+    font-size: @m40px;
+    line-height: @m59px;
+    &--big {
+      font-size: @m35px;
+      line-height: @m40px;
+    }
+  }
 
-//   .slogan__title-item {
-//     -webkit-text-stroke-width: @m1px;
-//   }
+  .slogan__title-item {
+    -webkit-text-stroke-width: @m1px;
+  }
 
-//   .slogan__link {
-//     margin-bottom: @m30px;
-//     font-size: @m20px;
-//   }
+  .slogan__link {
+    margin-bottom: @m30px;
+    font-size: @m20px;
+  }
 
-//   .slogan__icon-arrow {
-//     width: @m42px;
-//     padding-left: @m21px;
-//     &--left {
-//       padding-left: 0;
-//     }
-//   }
-// }
+  .slogan__icon-arrow {
+    width: @m42px;
+    padding-left: @m21px;
+    &--left {
+      padding-left: 0;
+    }
+  }
+}

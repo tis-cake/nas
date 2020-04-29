@@ -8,6 +8,10 @@
   flex-wrap: wrap;
 }
 
+.link-sections__link {
+  max-width: 64.7rem;
+}
+
 .link-sections__item {
   margin-bottom: 10rem;
 }
@@ -43,9 +47,12 @@
   margin-left: 6rem;
 }
 
-@media (max-width: 1782px) {
-  .link-sections__list {
-    justify-content: space-evenly;
+@media (max-width: @tablet-width) {
+  .link-sections__item,
+  .link-sections__link,
+  .link-sections__img-wrap {
+    max-width: none;
+    width: 100%;
   }
 }
 

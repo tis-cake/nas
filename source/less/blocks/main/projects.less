@@ -6,6 +6,8 @@
 
 .projects__item {
   position: relative;
+  
+  max-width: 64.7rem;
   margin-left: 0.8rem;
   
   margin-bottom: 14.4rem;
@@ -68,6 +70,7 @@
 
 @media (max-width: @tablet-width) {
   .projects__item {
+    max-width: none;
     margin-left: 0.8rem;
     margin-bottom: 9.9rem;
     padding-left: 0.9rem;
@@ -75,7 +78,8 @@
       top: -3rem;
       left: -0.8rem;
       width: 33.6rem;
-      height: 33.6rem;
+      // height: 33.6rem;
+      height: 70%;
       border: 0.3rem solid #fff;
     }
   }
@@ -90,6 +94,7 @@
 
   .projects__title {
     max-width: 32rem;
+    min-height: 0;
     margin-bottom: 1rem;
 
     font-size: 3.5rem;

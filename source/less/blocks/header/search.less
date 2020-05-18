@@ -9,18 +9,31 @@
   box-sizing: border-box;
   width: 100%;
   .padding-block(1rem);
-  .padding-inline(1.5rem, 4.5rem);
+  .padding-inline(1.5rem, 10.5rem);
 
   font-size: 1.6rem;
   border-radius: 0.2rem;
   border: 0.1rem solid #D3D3D3;
   color: #777;
-
 }
+
 .search__icon {
   position: absolute;
   top: 1rem;
   right: 1.7rem;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.search__icon-item {
+  width: 2rem;
+}
+
+.search__input-submit {
+  margin-right: 1rem;
   cursor: pointer;
 }
 

@@ -58,6 +58,7 @@ if (mainSwiperArr.length >= 10) {
 let projectsSwiper = new Swiper('#projects-swiper', {
   slidesPerView: 1,
   // preloadImages: false,
+  autoHeight: true,
 
   navigation: {
     nextEl: '.projects-swiper__button-next',

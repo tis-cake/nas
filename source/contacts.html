@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="«Национальный антинаркотический союз»">
+  <title>Национальный Антинаркотический Союз</title>
+
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico"> -->
+
+  <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__block-top">
+      <div class="header__content-wrap container">
+        <button class="header__menu-toggle menu-toggle">
+          <span>Открыть меню</span>
+        </button>
+        <a class="header__logo logo" href="index.html">
+          <div class="logo__img-wrap">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img class="logo__img logo__img--position" src="img/logo.png" alt="Логотип Национального Антинаркотического Союза">
+            </picture>
+          </div>
+          <div class="logo__text-wrap">
+            <p class="logo__text">
+              <span class="logo__text-item">Национальный</span>
+              <span class="logo__text-item">Антинаркотический</span>
+              <span class="logo__text-item">Союз</span>
+            </p>
+          </div>      
+        </a>
+        <button class="header__search-toggle">
+          <svg class="icon-search header__search-toggle-icon" width="30" height="30">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+        <div class="header__search search">
+          <form class="search__form" action=".php" method="post">
+            <input class="search__input" id="search-field" type="search" name="SEARCH" placeholder="Поиск по сайту">
+            <label class="search__icon" for="search-field">
+              <svg class="icon-search search__icon-item" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </label>
+          </form>
+        </div>
+        <div class="header__social-links social-links">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наш канал на YouTube" aria-label="Наш канал на YouTube">
+                <svg class="social-links__icon icon-youtube" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Наш канал на YouTube</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Twitter" aria-label="Наша страница в Twitter">
+                <svg class="social-links__icon icon-twitter" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Twitter</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Facebook" aria-label="Наша страница в Facebook">
+                <svg class="social-links__icon icon-facebook" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Facebook</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Instagram" aria-label="Наша страница в Instagram">
+                <svg class="social-links__icon icon-instagram" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <svg class="social-links__icon icon-instagram--gradient" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-instagram-color"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__block-bottom">
+      <nav class="header__nav nav container">
+        <ul class="nav__list-link">
+          <li class="nav__item">
+            <a class="nav__link" href="about.html">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="programs.html">Наши программы</a>
+          </li>                                        
+          <li class="nav__item">
+            <a class="nav__link" href="projects.html">Ключевые проекты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="howhelp.html">Как помочь</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="news.html">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <form class="nav__form-lang" action=".php" method="post">
+          <select class="nav__select-lang" name="SELECT-LANG">
+            <option value="LANG-RUSSIAN" selected>RU</option>
+            <option value="LANG-ENGLISH">EN</option>
+            <option value="LANG-FRENCH">FR</option>
+            <option value="LANG-CHINESE">ZH</option>
+          </select>
+        </form>
+        <div class="nav__social-links social-links">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наш канал на YouTube" aria-label="Наш канал на YouTube">
+                <svg class="social-links__icon social-links__icon--big icon-youtube" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Наш канал на YouTube</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Twitter" aria-label="Наша страница в Twitter">
+                <svg class="social-links__icon social-links__icon--big icon-twitter" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Twitter</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Facebook" aria-label="Наша страница в Facebook">
+                <svg class="social-links__icon social-links__icon--big icon-facebook" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Facebook</span>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#" target="_blank" title="Наша страница в Instagram" aria-label="Наша страница в Instagram">
+                <svg class="social-links__icon social-links__icon--big icon-instagram" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <span class="visually-hidden">Наша страница в Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="contacts container">
+      <p class="contacts__slogan">
+        мы всегда рады вам помочь!
+      </p>
+      <h2 class="contacts__title">
+        <span class="contacts__title-item stroke">Наши</span>
+        <span class="contacts__title-item">контакты</span>
+      </h2>
+      <div class="contacts__wrap">
+        <div class="contacts__content-wrap">
+          <div class="contacts__text-wrap">
+            <p class="contacts__desc contacts__desc-title">Центральный офис Союза</p>
+            <p class="contacts__desc">121087, Москва, Багратионовский проезд 7 корпус 20А</p>
+          </div>
+          <ul class="contacts__link-wrap">
+            <li class="contacts__link-item">
+              <a class="contacts__link contacts__link-mail" href="mailto:nasrf.ru@mail.ru">
+                nasrf.ru@mail.ru
+              </a>
+            </li>
+            <li class="contacts__link-item">
+              <a class="contacts__link contacts__link-tel" href="tel:+74951234567">
+                +7 (915) 381-08-10
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__img-wrap">
+          <img class="contacts__img" src="img/contacts/1.jpg" alt="Наши контакты">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__column-wrap">
+        <div class="footer__column-left">
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="programs.html">Наши программы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Для врачей</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Для подростков</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Для детей</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Для прошедших реабилитацию</a>
+            </li>
+          </ul>
+      
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="projects.html">Ключевые проекты</a>
+            </li>
+          </ul>
+      
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="howhelp.html">Как помочь</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Стать волонтёром</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Прими участие в акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Поддержи программы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Сотрудничество</a>
+            </li>
+          </ul>
+      
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="materials.html">Материалы</a>
+            </li>
+          </ul>
+      
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="drug-free.html">Подход DRUG FREE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column-center">
+          <a class="footer__logo logo" href="index.html">
+            <div class="logo__img-wrap logo__img-wrap--big">
+              <picture>
+                <source type="image/webp" srcset="img/logo.webp">
+                <img class="logo__img" src="img/logo.png" alt="Логотип Национального Антинаркотического Союза">
+              </picture>
+            </div>
+            <p class="logo__text">
+              Национальный Антинаркотический Союз
+            </p>   
+          </a>
+          <div class="footer__contacts-block">
+            
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                Телефон:
+                <a class="footer__contacts-link" href="tel:+79167777888">
+                  +7 916 777 78 88
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                E-mail:
+                <a class="footer__contacts-link" href="mailto:nas.com">
+                  nas.com
+                </a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="footer__social-links social-links">
+            <ul class="social-links__list">
+              <li class="social-links__item">
+                <a class="social-links__link" href="#" target="_blank" title="Наш канал на YouTube" aria-label="Наш канал на YouTube">
+                  <svg class="social-links__icon icon-youtube" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">Наш канал на YouTube</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link" href="#" target="_blank" title="Наша страница в Twitter" aria-label="Наша страница в Twitter">
+                  <svg class="social-links__icon icon-twitter" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">Наша страница в Twitter</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link" href="#" target="_blank" title="Наша страница в Facebook" aria-label="Наша страница в Facebook">
+                  <svg class="social-links__icon icon-facebook" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">Наша страница в Facebook</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link" href="#" target="_blank" title="Наша страница в Instagram" aria-label="Наша страница в Instagram">
+                  <svg class="social-links__icon icon-instagram" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  <svg class="social-links__icon icon-instagram--gradient" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-instagram-color"></use>
+                  </svg>
+                  <span class="visually-hidden">Наша страница в Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+        <div class="footer__column-right">
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="about.html">О НАС</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">История развития НАС</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Миссия и стратегия</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Проблема наркомании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Документы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Команда в России</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Совет в России</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отчеты о деятельности</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Финансовая отчётность</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реквизиты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вакансии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">СМИ о НАС</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы о НАС</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="news.html">Новости</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__item--bold">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Все права защищены
+          <svg class="footer__copyright-logo" width="20" height="20" aria-label="Знак авторского права">
+            <use xlink:href="img/sprite.svg#icon-copy"></use>
+          </svg>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/libs/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+
+</body>
+</html>

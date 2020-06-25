@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -693,14 +694,13 @@
         <div class="swiper-pagination reviews-swiper__pagination"></div>
 
         <div class="swiper-wrapper">
+          <!-- ОТЗЫВ С ВИДЕО -->
           <div class="swiper-slide reviews-swiper__slide">
             <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
+              <a data-fancybox="video" href="https://www.youtube.com/embed/C3-p-f3vqZA" class="reviews-swiper__img-wrap">
+                <!-- <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt=""> -->
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C3-p-f3vqZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </a>
               <div class="reviews-swiper__text-wrap">
                 <cite class="reviews-swiper__author-name">Антон Пухов</cite>
                 <p class="reviews-swiper__author-text">
@@ -709,151 +709,13 @@
               </div>
             </blockquote>
           </div>
-
+          
+          <!-- ОТЗЫВ С ФОТО -->
           <div class="swiper-slide reviews-swiper__slide">
             <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
+              <a data-fancybox="img" href="img/swiper/reviews-swiper/1.jpg" class="reviews-swiper__img-wrap">
                   <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
-              <div class="reviews-swiper__text-wrap">
-                <cite class="reviews-swiper__author-name">Антон Пухов</cite>
-                <p class="reviews-swiper__author-text">
-                  Спасибо центру за помощь нашей семье! Прошли все 12 шагов, алкоголь теперь для мужа забыт, как страшный сон. Во многом помогла творческая реабилитация, муж ушел целиком в музыку, играет на гитаре и пишет песни! Не может нарадоваться. Спасибо специалистам за поддержку, за то, что дали надежду и спасение! Вы настоящие ангелы, каждый день благодарю Бога! Вы делаете великое дело.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="swiper-slide reviews-swiper__slide">
-            <blockquote class="reviews-swiper__blockquote">
-              <div class="reviews-swiper__img-wrap">
-                <!-- <picture> -->
-                  <!-- <source type="image/webp" srcset="img/swiper/reviews-swiper/1.webp"> -->
-                  <img class="reviews-swiper__img" src="img/swiper/reviews-swiper/1.jpg" alt="">
-                <!-- </picture> -->
-              </div>
+              </a>
               <div class="reviews-swiper__text-wrap">
                 <cite class="reviews-swiper__author-name">Антон Пухов</cite>
                 <p class="reviews-swiper__author-text">
@@ -1077,6 +939,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/libs/jquery-3.4.1.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
 
   <script src="js/libs/swiper.min.js"></script>
   <script src="js/main.js"></script>

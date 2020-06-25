@@ -2827,8 +2827,11 @@ input[type="radio"].visually-hidden {
   margin-left: 23.5rem;
 }
 .reviews-swiper__img-wrap {
-  max-width: 25.5rem;
+  width: 25.5rem;
   height: 25.5rem;
+}
+.reviews-swiper__img-wrap iframe {
+  pointer-events: none;
 }
 .reviews-swiper__img {
   width: 100%;
@@ -2899,6 +2902,7 @@ input[type="radio"].visually-hidden {
   }
   .reviews-swiper__img-wrap {
     max-width: 19.1rem;
+    width: auto;
     height: 19.1rem;
     margin-bottom: 4rem;
   }

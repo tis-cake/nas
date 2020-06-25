@@ -113,3 +113,28 @@ function slideDown(item, duration) {
     }
   }, duration); 
 }
+
+// $().fancybox({
+//     selector : '.reviews-swiper__img-wrap',
+//     backFocus: false
+// });
+
+// $().fancybox({
+//         selector : '.swiper-slide-link',
+//         loop: true,
+//         animationEffect: "zoom-in-out",
+//         buttons : [
+//             'fullScreen',
+//             'close'
+//         ],
+//         titleShow: true
+//     });
+
+$().fancybox({
+  selector : '.reviews-swiper__img-wrap',
+  loop: true,
+  animationEffect: "zoom-in-out",
+  buttons : ['fullScreen','close'],
+  titleShow: true,
+  backFocus: false
+});
